@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-23T07:20:57.708Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="6tdPaJAr9KGAHgVH392v" version="21.1.8" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2023-04-23T13:27:29.482Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ShnKyXQsTSBzLzWhDRTI" version="21.1.8" type="github" pages="10">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2074" dy="2293" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1181,15 +1181,15 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ggJVvFzHXO1mDP39VETe" name="连接交互图">
-    <mxGraphModel dx="2012" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3267" dy="1322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="0JfIJlAUYcl-lP0aooLO-1" value="Client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="-10" y="360" width="100" height="2050" as="geometry" />
+          <mxGeometry x="-10" y="360" width="100" height="2440" as="geometry" />
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-2" value="DS" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};points=[];" vertex="1" parent="1">
-          <mxGeometry x="480" y="360" width="100" height="2380" as="geometry" />
+          <mxGeometry x="480" y="360" width="100" height="2440" as="geometry" />
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0JfIJlAUYcl-lP0aooLO-18" target="0JfIJlAUYcl-lP0aooLO-31">
           <mxGeometry relative="1" as="geometry">
@@ -1279,7 +1279,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-40" value="发送:NMT_Welcome&lt;br&gt;FNetControlMessage&amp;lt;NMT_Welcome&amp;gt;::Send(&lt;br&gt;Connection, LevelName, GameName, RedirectURL);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="377.12" y="1590" width="305.78" height="40" as="geometry" />
+          <mxGeometry x="377.12" y="1590" width="305.78" height="50" as="geometry" />
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-35" value="发送:NMT_Login&lt;br&gt;FNetControlMessage&amp;lt;NMT_Challenge&amp;gt;::Send(this, Challenge);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
           <mxGeometry x="351.72" y="1200" width="356.56" height="40" as="geometry" />
@@ -1313,7 +1313,7 @@
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-54" value="NMT_Login" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0JfIJlAUYcl-lP0aooLO-53">
           <mxGeometry x="-0.1433" y="4" relative="1" as="geometry">
-            <mxPoint x="4" y="8" as="offset" />
+            <mxPoint x="13" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-55" value="ClientResponse:0" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
@@ -1339,6 +1339,78 @@
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-76" value="RedirectURL:空" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="0JfIJlAUYcl-lP0aooLO-77">
           <mxGeometry y="60" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-1" value="发送:NMT_Netspeed&lt;br&gt;&lt;div&gt;&lt;div&gt;FNetControlMessage&amp;lt;NMT_Netspeed&amp;gt;::Send(Connection, Connection-&amp;gt;CurrentNetSpeed);&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-121.44" y="1710" width="322.89" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="0JfIJlAUYcl-lP0aooLO-40" target="FScM3u6agPcXs4lqA9-Q-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="1556" as="sourcePoint" />
+            <mxPoint x="387" y="1613" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-3" value="NMT_Welcome" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FScM3u6agPcXs4lqA9-Q-2">
+          <mxGeometry x="-0.1433" y="4" relative="1" as="geometry">
+            <mxPoint x="-30" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-4" value="发送:NMT_Join&lt;br&gt;&lt;div&gt;&lt;div&gt;FNetControlMessage&amp;lt;NMT_Join&amp;gt;::Send(NetDriver-&amp;gt;ServerConnection);&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-121.45" y="1840" width="322.89" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-5" value="Connection-&amp;gt;CurrentNetSpeed" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="1720" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-6" value="加载地图" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-60.730000000000004" y="1780" width="201.45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-7" value="GameMode-&amp;gt;Login()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="1920" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="FScM3u6agPcXs4lqA9-Q-4" target="FScM3u6agPcXs4lqA9-Q-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="387" y="1638" as="sourcePoint" />
+            <mxPoint x="211" y="1733" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-9" value="NMT_Welcome" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FScM3u6agPcXs4lqA9-Q-8">
+          <mxGeometry x="-0.1433" y="4" relative="1" as="geometry">
+            <mxPoint x="-30" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-10" value="GameMode-&amp;gt;Login()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="2160" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-11" value="&lt;div&gt;&lt;font color=&quot;#7600D8&quot;&gt;&lt;b&gt;NetConnection-&amp;gt;OwningActor = this;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="2240" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-12" value="&lt;div&gt;// 通知客户端创建HUD&lt;/div&gt;&lt;div&gt;AGameModeBase.InitializeHUDForPlayer(PC);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="2400" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-13" value="AGameModeBase.InitNewPlayer()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="2080" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-14" value="创建PlayerController" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="2000" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-15" value="&lt;div&gt;GameMode-&amp;gt;PostLogin(NewPlayerController);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="377.12" y="2320" width="305.78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-16" value="Connection-&amp;gt;SetClientLoginState(EClientLoginState::ReceivedJoin);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="330.735" y="2480" width="398.55" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-17" value="在UNetDriver::ServerReplicateActors时候开始进行属性同步" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="330.725" y="2560" width="398.55" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="0JfIJlAUYcl-lP0aooLO-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519.5" y="2700" as="sourcePoint" />
+            <mxPoint x="39.99666666666651" y="2700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-19" value="开始正常进行通信" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FScM3u6agPcXs4lqA9-Q-18">
+          <mxGeometry x="-0.1433" y="4" relative="1" as="geometry">
+            <mxPoint x="-14" y="-4" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
