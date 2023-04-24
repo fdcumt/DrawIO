@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-24T13:18:01.817Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="_qyLNc5C8BWVvUp0zu6L" version="21.2.1" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2023-04-24T13:28:53.662Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="QRU-pHVrTiUAPE5SaB3O" version="21.2.1" type="github" pages="11">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1394,7 +1394,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ggJVvFzHXO1mDP39VETe" name="连接交互图">
-    <mxGraphModel dx="3141" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2149" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1486,15 +1486,15 @@
             <mxPoint x="-60" y="1413.6" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0JfIJlAUYcl-lP0aooLO-39" value="ChallengeResponse" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="0JfIJlAUYcl-lP0aooLO-38" vertex="1" connectable="0">
+        <mxCell id="0JfIJlAUYcl-lP0aooLO-39" value="NMT_Challenge" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="0JfIJlAUYcl-lP0aooLO-38" vertex="1" connectable="0">
           <mxGeometry x="-0.1433" y="4" relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
+            <mxPoint x="-10" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-40" value="发送:NMT_Welcome&lt;br&gt;FNetControlMessage&amp;lt;NMT_Welcome&amp;gt;::Send(&lt;br&gt;Connection, LevelName, GameName, RedirectURL);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="377.12" y="1590" width="305.78" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="0JfIJlAUYcl-lP0aooLO-35" value="发送:NMT_Login&lt;br&gt;FNetControlMessage&amp;lt;NMT_Challenge&amp;gt;::Send(this, Challenge);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
+        <mxCell id="0JfIJlAUYcl-lP0aooLO-35" value="发送:NMT_Challenge&lt;br&gt;FNetControlMessage&amp;lt;NMT_Challenge&amp;gt;::Send(this, Challenge);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="351.72" y="1200" width="356.56" height="40" as="geometry" />
         </mxCell>
         <mxCell id="0JfIJlAUYcl-lP0aooLO-49" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -1568,16 +1568,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-4" value="发送:NMT_Join&lt;br&gt;&lt;div&gt;&lt;div&gt;FNetControlMessage&amp;lt;NMT_Join&amp;gt;::Send(NetDriver-&amp;gt;ServerConnection);&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="-121.45" y="1840" width="322.89" height="50" as="geometry" />
+          <mxGeometry x="-175.73" y="1820" width="431.44" height="40" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-5" value="Connection-&amp;gt;CurrentNetSpeed" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="-300" y="1720" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-6" value="加载地图" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="-60.730000000000004" y="1780" width="201.45" height="50" as="geometry" />
+          <mxGeometry x="-60.73" y="1780" width="201.45" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-7" value="GameMode-&amp;gt;Login()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="1920" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="452.5" y="1891" width="155" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="FScM3u6agPcXs4lqA9-Q-4" target="FScM3u6agPcXs4lqA9-Q-7" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1587,37 +1587,37 @@
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-9" value="NMT_Join" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="FScM3u6agPcXs4lqA9-Q-8" vertex="1" connectable="0">
           <mxGeometry x="-0.1433" y="4" relative="1" as="geometry">
-            <mxPoint y="8" as="offset" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-10" value="GameMode-&amp;gt;Login()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="2160" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="452.305" y="2004" width="155.39" height="20" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-11" value="&lt;div&gt;&lt;font color=&quot;#7600D8&quot;&gt;&lt;b&gt;NetConnection-&amp;gt;OwningActor = this;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="2240" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="418.44" y="2032" width="223.12" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-12" value="&lt;div&gt;// 通知客户端创建HUD&lt;/div&gt;&lt;div&gt;AGameModeBase.InitializeHUDForPlayer(PC);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="2400" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="393.75" y="2108" width="272.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-13" value="AGameModeBase.InitNewPlayer()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="2080" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="423.75" y="1962" width="212.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-14" value="创建PlayerController" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="2000" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="448.555" y="1931" width="162.89" height="22" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-15" value="&lt;div&gt;GameMode-&amp;gt;PostLogin(NewPlayerController);&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="377.12" y="2320" width="305.78" height="50" as="geometry" />
+          <mxGeometry x="393.75" y="2070" width="272.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-16" value="Connection-&amp;gt;SetClientLoginState(EClientLoginState::ReceivedJoin);" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="330.735" y="2480" width="398.55" height="50" as="geometry" />
+          <mxGeometry x="335.37" y="2157" width="389.26" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-17" value="在UNetDriver::ServerReplicateActors时候开始进行属性同步" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;" parent="1" vertex="1">
-          <mxGeometry x="330.725" y="2560" width="398.55" height="50" as="geometry" />
+          <mxGeometry x="344.865" y="2197" width="370.27" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FScM3u6agPcXs4lqA9-Q-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="0JfIJlAUYcl-lP0aooLO-2" edge="1">
+        <mxCell id="FScM3u6agPcXs4lqA9-Q-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="519.5" y="2700" as="sourcePoint" />
-            <mxPoint x="39.99666666666651" y="2700" as="targetPoint" />
+            <mxPoint x="529.5" y="2268" as="sourcePoint" />
+            <mxPoint x="39.99666666666651" y="2268" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FScM3u6agPcXs4lqA9-Q-19" value="开始正常进行通信" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="FScM3u6agPcXs4lqA9-Q-18" vertex="1" connectable="0">
