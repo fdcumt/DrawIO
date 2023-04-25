@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-24T13:34:53.235Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="sOGEIhs6d2gl2xAdp5in" version="21.2.1" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2023-04-25T07:08:17.142Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="DM0RP79EjOb1CVkPHtCF" version="21.2.1" type="github" pages="12">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1773,7 +1773,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5Yn6WwV7afsk_pk5Sopr" name="属性同步">
-    <mxGraphModel dx="1657" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1753" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1789,6 +1789,14 @@
         <mxCell id="2sjmRXcpVOwDmXNdVY_o-6" value="FActorChannelMap ActorChannels;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2sjmRXcpVOwDmXNdVY_o-5">
           <mxGeometry y="26" width="250" height="26" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="5j0ebRBy4910e1SASGVA" name="属性同步-内存布局\">
+    <mxGraphModel dx="2314" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
