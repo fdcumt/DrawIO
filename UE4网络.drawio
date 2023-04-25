@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-25T09:15:38.555Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="6E9heKOz_rbvPQom3JU4" version="21.2.1" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-04-25T09:19:11.290Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="VWhspp5O2MhAFdx0mpnl" version="21.2.1" type="github" pages="12">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2488,7 +2488,7 @@
           <mxGeometry y="490" width="430" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fXzs4kYVwzuIt5zQzszs-512" value="FRepParentCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1770" width="470" height="600" as="geometry" />
+          <mxGeometry x="200" y="1620" width="470" height="600" as="geometry" />
         </mxCell>
         <mxCell id="fXzs4kYVwzuIt5zQzszs-513" value="FProperty* Property;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
           <mxGeometry y="26" width="470" height="26" as="geometry" />
@@ -2525,6 +2525,39 @@
         </mxCell>
         <mxCell id="fXzs4kYVwzuIt5zQzszs-524" value="	ERepParentFlags Flags;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
           <mxGeometry y="570" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-526" value="FRepLayoutCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="2322" width="470" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-527" value="&lt;div&gt;/** Pointer back to property, used for NetSerialize calls, etc. */&lt;/div&gt;&lt;div&gt;	FProperty* Property;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-528" value="&lt;div&gt;/** For arrays, this is the cmd index to jump to, to skip this arrays inner elements. */&lt;/div&gt;&lt;div&gt;	uint16 EndCmd;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="70" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-529" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** For arrays, element size of data. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 ElementSize;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="110" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-530" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Absolute offset of property in Object Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 Offset;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="150" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-531" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Absolute offset of property in Shadow Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 ShadowOffset;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="190" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-532" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Handle relative to start of array, or top list. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 RelativeHandle;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-533" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Index into Parents. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 ParentIndex;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="270" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-534" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Used to determine if property is still compatible */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint32 CompatibleChecksum;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="310" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-535" value="	ERepLayoutCmdType Type;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="350" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-536" value="	ERepLayoutCmdFlags Flags;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
+          <mxGeometry y="380" width="470" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
