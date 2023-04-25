@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-25T09:03:37.006Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="N1FVC7E680F3mTc8W5hZ" version="21.2.1" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-04-25T09:12:58.171Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="chlSAwxMOUVvnccVi3Aw" version="21.2.1" type="github" pages="12">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1793,7 +1793,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5j0ebRBy4910e1SASGVA" name="属性同步-内存布局\">
-    <mxGraphModel dx="2252" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1811" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2451,41 +2451,80 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-496" value="FRepLayout" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-390" y="1760" width="600" height="520" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-496" value="FRepLayout" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="1754" width="430" height="520" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-497" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="26" width="600" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-497" value="ERepLayoutFlags Flags;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="26" width="430" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-499" value="// Size (in bytes) needed to allocate a single instance&lt;br&gt;// of a Shadow buffer for this RepLayout.&lt;br&gt;int32 ShadowDataBufferSize;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="52" width="600" height="58" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-499" value="&lt;font color=&quot;#008000&quot;&gt;// Size (in bytes) needed to allocate a single instance&lt;br&gt;// of a Shadow buffer for this RepLayout.&lt;/font&gt;&lt;br&gt;int32 ShadowDataBufferSize;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="52" width="430" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-498" value="&lt;div&gt;/** Top level Layout Commands. */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepParentCmd&amp;gt; Parents;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="110" width="600" height="40" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-498" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Top level Layout Commands. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepParentCmd&amp;gt; Parents;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="110" width="430" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-500" value="&lt;div&gt;/** All Layout Commands. */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepLayoutCmd&amp;gt; Cmds;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="150" width="600" height="40" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-500" value="&lt;div&gt;/** All Layout Commands. */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepLayoutCmd&amp;gt; Cmds;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="150" width="430" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-503" value="&lt;div&gt;// Converts a relative handle to&amp;nbsp;&lt;/div&gt;&lt;div&gt;// the appropriate index into the Cmds array */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FHandleToCmdIndex&amp;gt; BaseHandleToCmdIndex;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="190" width="600" height="60" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-503" value="&lt;div&gt;// Converts a relative handle to&amp;nbsp;&lt;/div&gt;&lt;div&gt;// the appropriate index into the Cmds array */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FHandleToCmdIndex&amp;gt; BaseHandleToCmdIndex;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="190" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-504" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Special state tracking for Lifetime Custom Delta Properties.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Will only ever be valid if the Layout has Lifetime Custom Delta Properties.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TUniquePtr&amp;lt;struct FLifetimeCustomDeltaState&amp;gt; LifetimeCustomPropertyState;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="250" width="600" height="60" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-504" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Special state tracking for Lifetime Custom Delta Properties.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Will only ever be valid if the Layout has Lifetime Custom Delta Properties.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TUniquePtr&amp;lt;struct FLifetimeCustomDeltaState&amp;gt; LifetimeCustomPropertyState;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="250" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-507" value="&lt;div&gt;	// UClass, UStruct, or UFunction&amp;nbsp;&lt;/div&gt;&lt;div&gt;// that this FRepLayout represents.*/&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;UStruct* Owner;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="310" width="600" height="60" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-507" value="&lt;div&gt;	// UClass, UStruct, or UFunction&amp;nbsp;&lt;/div&gt;&lt;div&gt;// that this FRepLayout represents.*/&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;UStruct* Owner;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="310" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-505" value="&lt;div&gt;	/** Shared serialization state for a multicast rpc */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FRepSerializationSharedInfo SharedInfoRPC;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="370" width="600" height="40" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-505" value="&lt;div&gt;	/** Shared serialization state for a multicast rpc */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FRepSerializationSharedInfo SharedInfoRPC;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="370" width="430" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-506" value="&lt;div&gt;	/** Shared comparison to default state for multicast rpc */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TBitArray&amp;lt;&amp;gt; SharedInfoRPCParentsChanged;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="410" width="600" height="40" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-506" value="&lt;div&gt;	/** Shared comparison to default state for multicast rpc */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TBitArray&amp;lt;&amp;gt; SharedInfoRPCParentsChanged;&lt;/div&gt;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="410" width="430" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-508" value="&lt;div&gt;	/** Properties that have push model enabled. */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TBitArray&amp;lt;&amp;gt; PushModelProperties;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="450" width="600" height="40" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-508" value="&lt;div&gt;	/** Properties that have push model enabled. */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TBitArray&amp;lt;&amp;gt; PushModelProperties;&lt;/div&gt;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="450" width="430" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-501" value="TMap&amp;lt;FRepLayoutCmd*, TArray&amp;lt;FRepLayoutCmd&amp;gt;&amp;gt; NetSerializeLayouts;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="490" width="600" height="30" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-501" value="TMap&amp;lt;FRepLayoutCmd*, TArray&amp;lt;FRepLayoutCmd&amp;gt;&amp;gt; NetSerializeLayouts;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="490" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-512" value="FRepParentCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1770" width="470" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-513" value="FProperty* Property;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="26" width="470" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-514" value="const FName CachedPropertyName;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="52" width="470" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-515" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#008000&quot;&gt;// If the Property is a C-Style fixed size array, then a command will be created for&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#008000&quot;&gt;// every element in the array.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#008000&quot;&gt;// This is the index of the element in the array for which the command represents.&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// This will always be 0 for non array properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 ArrayIndex;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="80" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-516" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Absolute offset of property in Object Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 Offset;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="170" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-517" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Converts a relative handle to&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// the appropriate index into the Cmds array&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FHandleToCmdIndex&amp;gt; BaseHandleToCmdIndex;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="210" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-518" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Absolute offset of property in Shadow Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 ShadowOffset;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="270" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-519" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#008000&quot;&gt;// CmdStart and CmdEnd define the range of FRepLayoutCommands&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#008000&quot;&gt;// (by index in FRepLayouts Cmd array) of commands&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// that are associated with this Parent Command.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// This is used to track and access nested Properties from the parent.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint16 CmdStart;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="310" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-520" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** @see CmdStart */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint16 CmdEnd;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="400" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-521" value="	ELifetimeCondition Condition;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="440" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-522" value="	ELifetimeRepNotifyCondition RepNotifyCondition;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="470" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-523" value="&lt;div&gt;	/**&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * Number of parameters that we need to pass to the RepNotify function (if any).&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * If this value is INDEX_NONE, it means there is no RepNotify function associated&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * with the property.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 RepNotifyNumParams;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="500" width="470" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-524" value="	ERepParentFlags Flags;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-512">
+          <mxGeometry y="610" width="470" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
