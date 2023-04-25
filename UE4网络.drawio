@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-25T08:58:20.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="CAutFsodA32tMfJZcPIP" version="21.2.1" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-04-25T09:02:20.877Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="KALNhR7kMwZW8IoRw4wp" version="21.2.1" type="github" pages="12">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1793,7 +1793,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5j0ebRBy4910e1SASGVA" name="属性同步-内存布局\">
-    <mxGraphModel dx="1401" dy="312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2252" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2452,43 +2452,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="fXzs4kYVwzuIt5zQzszs-496" value="FRepLayout" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="1820" width="280" height="338" as="geometry" />
+          <mxGeometry x="-390" y="1760" width="600" height="520" as="geometry" />
         </mxCell>
         <mxCell id="fXzs4kYVwzuIt5zQzszs-497" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="26" width="280" height="26" as="geometry" />
+          <mxGeometry y="26" width="600" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-499" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="52" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-499" value="// Size (in bytes) needed to allocate a single instance&lt;br&gt;// of a Shadow buffer for this RepLayout.&lt;br&gt;int32 ShadowDataBufferSize;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="52" width="600" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-498" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="78" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-498" value="&lt;div&gt;/** Top level Layout Commands. */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepParentCmd&amp;gt; Parents;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="110" width="600" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-500" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="104" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-500" value="&lt;div&gt;/** All Layout Commands. */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepLayoutCmd&amp;gt; Cmds;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="150" width="600" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-503" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="130" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-503" value="&lt;div&gt;// Converts a relative handle to&amp;nbsp;&lt;/div&gt;&lt;div&gt;// the appropriate index into the Cmds array */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FHandleToCmdIndex&amp;gt; BaseHandleToCmdIndex;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="190" width="600" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-504" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="156" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-504" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Special state tracking for Lifetime Custom Delta Properties.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Will only ever be valid if the Layout has Lifetime Custom Delta Properties.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TUniquePtr&amp;lt;struct FLifetimeCustomDeltaState&amp;gt; LifetimeCustomPropertyState;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="250" width="600" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-507" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="182" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-507" value="&lt;div&gt;	// UClass, UStruct, or UFunction&amp;nbsp;&lt;/div&gt;&lt;div&gt;// that this FRepLayout represents.*/&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;UStruct* Owner;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="310" width="600" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-505" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="208" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-505" value="&lt;div&gt;	/** Shared serialization state for a multicast rpc */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FRepSerializationSharedInfo SharedInfoRPC;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="370" width="600" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-506" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="234" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-506" value="&lt;div&gt;	/** Shared comparison to default state for multicast rpc */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TBitArray&amp;lt;&amp;gt; SharedInfoRPCParentsChanged;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="410" width="600" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-508" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="260" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-508" value="&lt;div&gt;	/** Properties that have push model enabled. */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TBitArray&amp;lt;&amp;gt; PushModelProperties;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="450" width="600" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-501" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="286" width="280" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="fXzs4kYVwzuIt5zQzszs-502" value="ERepLayoutFlags Flags;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
-          <mxGeometry y="312" width="280" height="26" as="geometry" />
+        <mxCell id="fXzs4kYVwzuIt5zQzszs-501" value="TMap&amp;lt;FRepLayoutCmd*, TArray&amp;lt;FRepLayoutCmd&amp;gt;&amp;gt; NetSerializeLayouts;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-496">
+          <mxGeometry y="490" width="600" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
