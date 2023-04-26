@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-26T11:24:26.734Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="XHwvz9NVr8_TZIw97UXq" version="21.2.1" type="github" pages="12">
+<mxfile host="app.diagrams.net" modified="2023-04-26T11:39:37.177Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="eVQ6LK04lvLbMZHf_ygO" version="21.2.1" type="github" pages="13">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1793,7 +1793,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5j0ebRBy4910e1SASGVA" name="属性同步-内存布局">
-    <mxGraphModel dx="2252" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5992" dy="2810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2558,6 +2558,153 @@
         </mxCell>
         <mxCell id="fXzs4kYVwzuIt5zQzszs-536" value="	ERepLayoutCmdFlags Flags;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fXzs4kYVwzuIt5zQzszs-526">
           <mxGeometry y="380" width="470" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="7cfNHQAKfJITVXwYaNLJ" name="UClass::SetUpRuntimeReplicationData">
+    <mxGraphModel dx="4547" dy="-1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MSh2QM51Ty662Ni16E5t-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-1800" y="2850" width="1080" height="1158" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-2" value="UClass::SetUpRuntimeReplicationData" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-3" value="SuperClass-&amp;gt;SetUpRuntimeReplicationData();" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="770" y="278" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-4" value="ClassReps = SuperClass-&amp;gt;ClassReps;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="770" y="398" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-3" target="MSh2QM51Ty662Ni16E5t-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-8" target="MSh2QM51Ty662Ni16E5t-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-7" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MSh2QM51Ty662Ni16E5t-6">
+          <mxGeometry x="-0.1515" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-8" value="HasSuperClass" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="455" y="258" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-9" value="FirstOwnedClassRep = ClassReps.Num();" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="770" y="468" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-4" target="MSh2QM51Ty662Ni16E5t-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-11" value="ClassReps.Empty();" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="398" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-8" target="MSh2QM51Ty662Ni16E5t-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-13" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MSh2QM51Ty662Ni16E5t-12">
+          <mxGeometry x="-0.6224" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-14" value="FirstOwnedClassRep = 0;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="468" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-11" target="MSh2QM51Ty662Ni16E5t-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-16" value="收集含有CPF_Net的Property,放入NetProperties中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="608" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-9" target="MSh2QM51Ty662Ni16E5t-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-14" target="MSh2QM51Ty662Ni16E5t-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-19" value="收集含有FUNC_Net的UFunction, 放入UClass.NetFields中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="688" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-16" target="MSh2QM51Ty662Ni16E5t-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-21" value="按照FProperty.GetOffset_ForGC()对&lt;br&gt;NetProperties排序" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="800" y="788" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-24" target="MSh2QM51Ty662Ni16E5t-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-23" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MSh2QM51Ty662Ni16E5t-22">
+          <mxGeometry x="-0.2335" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-24" value="HasAnyClassFlags(CLASS_Native);" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="402.5" y="768" width="275" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-19" target="MSh2QM51Ty662Ni16E5t-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-26" value="ClassFlags |= CLASS_ReplicationDataIsSetUp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="978" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-28" target="MSh2QM51Ty662Ni16E5t-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-28" value="将NetProperties放入UClass.ClassReps中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="898" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-21" target="MSh2QM51Ty662Ni16E5t-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="918" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-24" target="MSh2QM51Ty662Ni16E5t-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-31" value="将UClass.NetFields(UFunction)按照名字排序" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="400" y="1048" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-26" target="MSh2QM51Ty662Ni16E5t-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-35" target="MSh2QM51Ty662Ni16E5t-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-34" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MSh2QM51Ty662Ni16E5t-33">
+          <mxGeometry x="-0.1483" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-35" value="CLASS_ReplicationDataIsSetUp&lt;br&gt;&amp;amp;&amp;amp;PropertyLink != NULL" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="422.5" y="106" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-2" target="MSh2QM51Ty662Ni16E5t-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-37" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="465" y="1118" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="MSh2QM51Ty662Ni16E5t-1" source="MSh2QM51Ty662Ni16E5t-35" target="MSh2QM51Ty662Ni16E5t-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="156" />
+              <mxPoint x="270" y="1138" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-39" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MSh2QM51Ty662Ni16E5t-38">
+          <mxGeometry x="-0.9082" y="-2" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSh2QM51Ty662Ni16E5t-40" value="收集所所有需要网络同步的属性(包括SuperClass中的属性), 并放入UClass.ClassReps中.&lt;br&gt;收集所有需要网络同步的UFunction(不包括SuperClass中的UFunction), 并放入UClass.NetFields中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="MSh2QM51Ty662Ni16E5t-1">
+          <mxGeometry x="-180" y="33" width="550" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
