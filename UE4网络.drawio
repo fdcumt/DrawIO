@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-28T07:49:17.112Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="g8JrhP4d1u9Zv7kvTaUP" version="21.2.2" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-04-28T08:21:45.336Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="oiXgqsYOT_-jMO2X9-f1" version="21.2.2" type="github" pages="15">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -4974,7 +4974,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="l27FcFa5vRkujBfl--du" name="FRepLayout.InitFromClass流程图">
-    <mxGraphModel dx="3267" dy="1322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3010" dy="1183" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5098,56 +5098,66 @@
         <mxCell id="gagJt-qrNKQ8_dklaaj5-17" value="Parents[ParentHandle].CmdEnd = Cmds.Num();" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="25" y="910" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-31" value="BuildShadowOffsets&amp;lt;ERepBuildType::Class&amp;gt;(InObjectClass, Parents, Cmds, ShadowDataBufferSize);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-60" y="2650" width="550" height="30" as="geometry" />
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-160" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-31" target="gagJt-qrNKQ8_dklaaj5-159">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-32" value="AddReturnCmd(Cmds);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1000" y="2338" width="410" height="30" as="geometry" />
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-31" value="BuildHandleToCmdIndexTable_r(0, Cmds.Num() - 1, BaseHandleToCmdIndex);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-45" y="3477" width="550" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-33" value="BuildHandleToCmdIndexTable_r(0, Cmds.Num() - 1, BaseHandleToCmdIndex);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-15" y="2590" width="460" height="30" as="geometry" />
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-124" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-33" target="gagJt-qrNKQ8_dklaaj5-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="3554" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-34" value="AddReturnCmd(Cmds);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="2348" width="410" height="30" as="geometry" />
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-33" value="LifetimeCustomPropertyState-&amp;gt;Add(FLifetimeCustomDeltaProperty(ParentIndex));" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-4.365000000000009" y="3364" width="468.73" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-65" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-35" target="gagJt-qrNKQ8_dklaaj5-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-35" value="Parents[ParentIndex].RepNotifyNumParams = RepNotifyFunc-&amp;gt;NumParms;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="25" y="1900" width="410" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-36" value="AddReturnCmd(Cmds);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="2348" width="410" height="30" as="geometry" />
+          <mxGeometry x="25" y="2010" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-60" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-37" target="gagJt-qrNKQ8_dklaaj5-48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-37" value="Parents[ParentIndex].RepNotifyCondition = LifetimeProps[i].RepNotifyCondition;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="1640" width="440" height="30" as="geometry" />
+          <mxGeometry x="10" y="1752.5" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-108" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-38" target="gagJt-qrNKQ8_dklaaj5-107">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-38" value="int32 FastArrayItemArrayCmd = INDEX_NONE;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="97.51" y="2480" width="265" height="30" as="geometry" />
+          <mxGeometry x="97.5" y="2652" width="265" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-59" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-39" target="gagJt-qrNKQ8_dklaaj5-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-39" value="Parents[ParentIndex].Condition = LifetimeProps[i].Condition;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="25" y="1570" width="410" height="30" as="geometry" />
+          <mxGeometry x="25" y="1692.5" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="3440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="773" y="3440" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-40" value="PushModelProperties[ParentIndex] = true;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="587.5" y="2638" width="235" height="30" as="geometry" />
+          <mxGeometry x="655.5" y="2768" width="235" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-58" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-41" target="gagJt-qrNKQ8_dklaaj5-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-41" value="const int32 ParentIndex = LifetimeProps[i].RepIndex;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="25" y="1510" width="410" height="30" as="geometry" />
+          <mxGeometry x="25" y="1626.5" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-86" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-42" target="gagJt-qrNKQ8_dklaaj5-83">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-42" value="++NumberOfLifetimeProperties;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="610" y="2438" width="190" height="30" as="geometry" />
+          <mxGeometry x="678" y="2568" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-56" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-43" target="gagJt-qrNKQ8_dklaaj5-47">
           <mxGeometry relative="1" as="geometry" />
@@ -5156,7 +5166,7 @@
           <mxGeometry x="25" y="1320" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-44" value="Owner = InObjectClass;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="2720" width="410" height="30" as="geometry" />
+          <mxGeometry x="25.000000000000014" y="3630" width="410" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-54" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-45" target="gagJt-qrNKQ8_dklaaj5-46">
           <mxGeometry relative="1" as="geometry" />
@@ -5170,13 +5180,8 @@
         <mxCell id="gagJt-qrNKQ8_dklaaj5-46" value="Object-&amp;gt;GetLifetimeReplicatedProps(LifetimeProps);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="25" y="1260" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-57" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-47" target="gagJt-qrNKQ8_dklaaj5-41">
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-129" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-47" target="gagJt-qrNKQ8_dklaaj5-127">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-62" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-57">
-          <mxGeometry x="-0.1417" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-47" value="i &amp;lt; LifetimeProps.Num()" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="1390" width="260" height="80" as="geometry" />
@@ -5184,8 +5189,22 @@
         <mxCell id="gagJt-qrNKQ8_dklaaj5-63" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-48" target="gagJt-qrNKQ8_dklaaj5-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-137" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-63">
+          <mxGeometry x="-0.3053" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="2080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="1888" />
+              <mxPoint x="490" y="2080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-48" value="UFunction* RepNotifyFunc = InObjectClass-&amp;gt;FindFunctionByName(Parents[ParentIndex].Property-&amp;gt;RepNotifyFunc)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="22.5" y="1714" width="415" height="136" as="geometry" />
+          <mxGeometry x="22.5" y="1820" width="415" height="136" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="gagJt-qrNKQ8_dklaaj5-10">
           <mxGeometry relative="1" as="geometry">
@@ -5206,16 +5225,6 @@
         <mxCell id="gagJt-qrNKQ8_dklaaj5-61" value="根据DefaultObject的GetLifetimeReplicatedProps, 来对ParentCmd设置属性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-150" y="1220" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-66" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-64">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="2170" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-67" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-66">
-          <mxGeometry x="-0.1095" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-70" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-64" target="gagJt-qrNKQ8_dklaaj5-69">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -5224,30 +5233,38 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-64" value="EnumHasAnyFlags(Parents[ParentIndex].Flags, ERepParentFlags::IsCustomDelta)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-23.75" y="1980" width="507.5" height="90" as="geometry" />
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-139" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-64" target="gagJt-qrNKQ8_dklaaj5-95">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-100" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-68">
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-140" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-139">
+          <mxGeometry x="-0.2293" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-64" value="EnumHasAnyFlags(Parents[ParentIndex].Flags, ERepParentFlags::IsCustomDelta)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-23.75" y="2110" width="507.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-100" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-68" target="gagJt-qrNKQ8_dklaaj5-142">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230.23809523809518" y="2360" as="targetPoint" />
+            <mxPoint x="225.23809523809518" y="2490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-68" value="LifetimeCustomPropertyState.Reset(&lt;br&gt;new FLifetimeCustomDeltaState(HighestCustomDeltaRepIndex));" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="41.25" y="2269" width="377.5" height="42" as="geometry" />
+          <mxGeometry x="41.25" y="2350" width="377.5" height="42" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-73" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-69" target="gagJt-qrNKQ8_dklaaj5-72">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-69" value="Parents[ParentIndex].Flags |= ERepParentFlags::IsLifetime;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="2010" width="330" height="30" as="geometry" />
+          <mxGeometry x="608" y="2140" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-78" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-71" target="gagJt-qrNKQ8_dklaaj5-77">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="712.5" y="2200" as="sourcePoint" />
+            <mxPoint x="780.5" y="2330" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-71" value="Parents[ParentIndex].Flags &amp;amp;= ~ERepParentFlags::IsConditional;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="525" y="2170" width="360" height="30" as="geometry" />
+          <mxGeometry x="593" y="2300" width="360" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-75" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.501;entryY=-0.119;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-72" target="gagJt-qrNKQ8_dklaaj5-71">
           <mxGeometry relative="1" as="geometry" />
@@ -5259,10 +5276,10 @@
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-72">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="710" y="2230" as="targetPoint" />
+            <mxPoint x="778" y="2360" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="980" y="2095" />
-              <mxPoint x="980" y="2230" />
+              <mxPoint x="1048" y="2225" />
+              <mxPoint x="1048" y="2360" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -5272,7 +5289,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-72" value="LifetimeProps[i].Condition == COND_None" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="565.31" y="2070" width="279.37" height="50" as="geometry" />
+          <mxGeometry x="633.31" y="2200" width="279.37" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-82" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-77" target="gagJt-qrNKQ8_dklaaj5-81">
           <mxGeometry relative="1" as="geometry" />
@@ -5280,8 +5297,8 @@
         <mxCell id="gagJt-qrNKQ8_dklaaj5-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.024;entryY=0.533;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-77" target="gagJt-qrNKQ8_dklaaj5-42">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="970" y="2290" />
-              <mxPoint x="970" y="2454" />
+              <mxPoint x="1038" y="2420" />
+              <mxPoint x="1038" y="2584" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -5299,13 +5316,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-77" value="EnumHasAnyFlags(Parents[ParentIndex].Flags, ERepParentFlags::HasNetSerializeProperties | ERepParentFlags::HasObjectProperties)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="522.655" y="2250" width="364.69" height="80" as="geometry" />
+          <mxGeometry x="590.655" y="2380" width="364.69" height="80" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-85" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-81" target="gagJt-qrNKQ8_dklaaj5-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-81" value="Flags |= ERepLayoutFlags::HasObjectOrNetSerializeProperties;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="525" y="2368" width="360" height="30" as="geometry" />
+          <mxGeometry x="593" y="2498" width="360" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-87" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-83" target="gagJt-qrNKQ8_dklaaj5-84">
           <mxGeometry relative="1" as="geometry" />
@@ -5315,19 +5332,28 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-94" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-83">
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-83">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="930" y="2730" as="targetPoint" />
+            <mxPoint x="773" y="3440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1060" y="2643" />
+              <mxPoint x="1060" y="3440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-158" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-94">
+          <mxGeometry x="-0.9329" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-83" value="bIsPushModelEnabled &amp;amp;&amp;amp; LifetimeProps[i].bIsPushBased" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="522.655" y="2488" width="364.69" height="50" as="geometry" />
+          <mxGeometry x="590.655" y="2618" width="364.69" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-88" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-84" target="gagJt-qrNKQ8_dklaaj5-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-84" value="++NumberOfPushModelProperties;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="610" y="2588" width="190" height="30" as="geometry" />
+          <mxGeometry x="678" y="2718" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-96" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-95" target="gagJt-qrNKQ8_dklaaj5-68">
           <mxGeometry relative="1" as="geometry" />
@@ -5337,12 +5363,12 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gagJt-qrNKQ8_dklaaj5-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-95">
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-95" target="gagJt-qrNKQ8_dklaaj5-142">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="2340" as="targetPoint" />
+            <mxPoint x="230" y="2440" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="460" y="2190" />
-              <mxPoint x="460" y="2340" />
+              <mxPoint x="455" y="2270" />
+              <mxPoint x="455" y="2483" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -5352,13 +5378,177 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-95" value="LifetimeCustomPropertyState" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="118.91" y="2170" width="222.19" height="40" as="geometry" />
+          <mxGeometry x="118.905" y="2250" width="222.19" height="40" as="geometry" />
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-102" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-98" target="gagJt-qrNKQ8_dklaaj5-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-106" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-102">
+          <mxGeometry x="-0.3719" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-98">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="3241.7391304347825" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="2567" />
+              <mxPoint x="540" y="3242" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-144" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-121">
+          <mxGeometry x="-0.912" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-98" value="EnumHasAnyFlags(Parents[ParentIndex].Flags, ERepParentFlags::IsFastArray)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="47.654999999999994" y="2358" width="364.69" height="80" as="geometry" />
+          <mxGeometry x="47.655" y="2527" width="364.69" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-112" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-107" target="gagJt-qrNKQ8_dklaaj5-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-107" value="CmdIndex &amp;lt; Parents[ParentIndex].CmdEnd" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="88.82499999999999" y="2722" width="282.35" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-120" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-109" target="gagJt-qrNKQ8_dklaaj5-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-109" value="LifetimeCustomPropertyState-&amp;gt;Add(FLifetimeCustomDeltaProperty...)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="31.25" y="3124" width="397.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-113" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=-0.057;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-110" target="gagJt-qrNKQ8_dklaaj5-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-110" value="const FRepLayoutCmd&amp;amp; Cmd = Cmds[CmdIndex];" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85.00999999999999" y="2822" width="289.98" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-115" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-111" target="gagJt-qrNKQ8_dklaaj5-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-118" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-115">
+          <mxGeometry x="-0.3928" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-111" target="gagJt-qrNKQ8_dklaaj5-107">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-70" y="2941" />
+              <mxPoint x="-70" y="2748" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-152" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-151">
+          <mxGeometry x="-0.7359" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-154" value="++CmdIndex&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-151">
+          <mxGeometry x="0.7703" y="-2" relative="1" as="geometry">
+            <mxPoint x="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-111" value="ERepLayoutCmdType::DynamicArray == Cmd.Type" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53.82499999999999" y="2906" width="352.35" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-117" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-114" target="gagJt-qrNKQ8_dklaaj5-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-119" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-117">
+          <mxGeometry x="-0.4643" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-114" target="gagJt-qrNKQ8_dklaaj5-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-150" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-149">
+          <mxGeometry x="-0.7614" y="-1" relative="1" as="geometry">
+            <mxPoint x="-38" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-114" value="检测Property Inner的Item是否为FFastArraySerializerItem" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53.82499999999999" y="3014" width="352.35" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-141" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-116" target="gagJt-qrNKQ8_dklaaj5-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-116" value="bAddedFastArray = true;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="3194" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-123" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-122" target="gagJt-qrNKQ8_dklaaj5-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-155" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-123">
+          <mxGeometry x="-0.4171" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-156" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-122">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="3284.739130434783" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-122" value="bAddedFastArray" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="141.875" y="3270" width="176.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="gagJt-qrNKQ8_dklaaj5-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="3440" as="sourcePoint" />
+            <mxPoint x="240" y="3320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-280" y="3440" />
+              <mxPoint x="-280" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-126" value="const int32 ParentIndex = LifetimeProps[i].RepIndex;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1630" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-130" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-127" target="gagJt-qrNKQ8_dklaaj5-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-136" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-130">
+          <mxGeometry x="-0.3919" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-133" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-127">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-135" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gagJt-qrNKQ8_dklaaj5-133">
+          <mxGeometry x="0.0529" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-127" value="COND_Never == LifetimeProps[i].Condition" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1507.5" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-134" value="++i" style="rounded=1;whiteSpace=wrap;html=1;fontSize=21;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="1410" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-143" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-142" target="gagJt-qrNKQ8_dklaaj5-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-142" value="bool bAddedFastArray = false;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="2468" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-153" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-145">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-70" y="2940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-145" value="CmdIndex = Cmd.EndCmd - 1;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="2976" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-161" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gagJt-qrNKQ8_dklaaj5-159" target="gagJt-qrNKQ8_dklaaj5-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gagJt-qrNKQ8_dklaaj5-159" value="BuildShadowOffsets&amp;lt;ERepBuildType::Class&amp;gt;(InObjectClass, Parents, Cmds, ShadowDataBufferSize);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-45" y="3570" width="550" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
