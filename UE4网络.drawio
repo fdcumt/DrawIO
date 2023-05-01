@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-01T08:08:24.929Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="el9CPM6FbfBoAEX4yVTp" version="21.2.2" type="github" pages="16">
+<mxfile host="app.diagrams.net" modified="2023-05-01T08:17:26.737Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ge1fE-gzYHBfcfmJZ-zf" version="21.2.2" type="github" pages="16">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -5554,7 +5554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2qx7iZ9YFfvBmF5B_u5h" name="类图">
-    <mxGraphModel dx="2486" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1919" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5762,7 +5762,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-188" value="FReceivingRepState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1960" y="2520" width="470" height="280" as="geometry" />
+          <mxGeometry x="1970" y="2380" width="470" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-189" value="&lt;font color=&quot;#008000&quot;&gt;/** Replication State needed to track received properties. */&lt;/font&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
           <mxGeometry y="26" width="470" height="44" as="geometry" />
@@ -5931,7 +5931,8 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1920" y="2500" />
-              <mxPoint x="1920" y="2532" />
+              <mxPoint x="1920" y="2392" />
+              <mxPoint x="1967" y="2392" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -6068,7 +6069,7 @@
           <mxGeometry y="320" width="470" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-360" value="FRepSharedPropertyKey" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1880" y="2970" width="190" height="146" as="geometry" />
+          <mxGeometry x="1810" y="3100" width="190" height="146" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-362" value="uint32 CmdIndex = 0;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-360">
           <mxGeometry y="26" width="190" height="28" as="geometry" />
@@ -6084,6 +6085,72 @@
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-373" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-350" target="Dl1oDDIPVmWzN5uZ3yZM-360">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-387" value="FSendingRepState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="2760" width="470" height="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-388" value="/** Replication State that is only needed when sending properties. */" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#008000;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-389" value="TSharedPtr&amp;lt;FObjectReplicator&amp;gt; ActorReplicator;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="70" width="470" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-390" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Whether or not FRepLayout::OpenAcked has been called with this FRepState. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	bool bOpenAckedCalled;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="98" width="470" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-391" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Cache off the RemoteRole and Role per connection to avoid issues with&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	// FScopedRoleDowngrade. See UE-66313 (among others).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TEnumAsByte&amp;lt;ENetRole&amp;gt; SavedRemoteRole = ROLE_MAX;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TEnumAsByte&amp;lt;ENetRole&amp;gt; SavedRole = ROLE_MAX;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="140" width="470" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-392" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Index in the buffer where changelist history starts (i.e., the Oldest changelist). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 HistoryStart;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="232" width="470" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-393" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Index in the buffer where changelist history ends (i.e., the Newest changelist). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 HistoryEnd;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="280" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-394" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Number of Changelist history entries that have outstanding Naks. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 NumNaks;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="330" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-395" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	 * The last change list history item we replicated from FRepChangelistState.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * (If we are caught up to FRepChangelistState::HistoryEnd, there are no new changelists to replicate).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 LastChangelistIndex;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="370" width="470" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-396" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	 * Tracks the last time this RepState actually replicated data.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * If this matches FRepChangelistState::CompareIndex, then there is definitely no new&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * information since the last time we checked.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; *&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * @see FRepChangelistState::CompareIndex.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; *&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * Note, we can&#39;t solely rely on on LastChangelistIndex, since changelists are stored in circular buffers.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 LastCompareIndex;&lt;/div&gt;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="470" width="470" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-397" value="FReplicationFlags RepFlags;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="640" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-398" value="TSharedPtr&amp;lt;FRepChangedPropertyTracker&amp;gt; RepChangedPropertyTracker;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="670" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-399" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** The maximum number of individual changelists allowed.*/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	static constexpr int32 MAX_CHANGE_HISTORY = 32;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="710" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-400" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Circular buffer of changelists. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepChangedHistory ChangeHistory[MAX_CHANGE_HISTORY];&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="750" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-401" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Array of property retirements that we&#39;ll use to track retransmission for Custom Delta Properties. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FPropertyRetirement&amp;gt; Retirement;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="790" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-406" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** List of changelists that were generated before the channel was fully opened.*/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRepChangedHistory&amp;gt; PreOpenAckHistory;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="850" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-405" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** The unique list of properties that have changed&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;since the channel was first opened */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;uint16&amp;gt; LifetimeChangelist;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="900" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-404" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	 * Properties which are inactive through conditions have their changes stored here, so they can be&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * applied if/when the property becomes active.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; *&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * This should always be a valid changelist, even if no properties are inactive.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TArray&amp;lt;uint16&amp;gt; InactiveChangelist;&lt;/div&gt;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="960" width="470" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-403" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Cached set of inactive parent commands. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TBitArray&amp;lt;&amp;gt; InactiveParents;&lt;/div&gt;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="1090" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-402" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** This is the delta state we need to compare with when determining what to send to a client for custom delta properties. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;TSharedPtr&amp;lt;INetDeltaBaseState&amp;gt;&amp;gt; RecentCustomDeltaState;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="1130" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-413" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Same as RecentCustomDeltaState, but this will always remain as the initial CDO version. We use this to send all properties since channel was first opened (for bResendAllDataSinceOpen). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;TSharedPtr&amp;lt;INetDeltaBaseState&amp;gt;&amp;gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;CDOCustomDeltaState;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="1190" width="470" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-412" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Same as RecentCustomDeltaState, but will represent the state at the last checkpoint. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;TSharedPtr&amp;lt;INetDeltaBaseState&amp;gt;&amp;gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;CheckpointCustomDeltaState;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
+          <mxGeometry y="1270" width="470" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
