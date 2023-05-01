@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-01T11:26:58.702Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="8Kpw2Pfsa3ALnJ-t_jFx" version="21.2.2" type="github" pages="17">
+<mxfile host="app.diagrams.net" modified="2023-05-01T12:24:06.301Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="iXclM-PSRApXIOu_6WI6" version="21.2.2" type="github" pages="17">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -5554,7 +5554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2qx7iZ9YFfvBmF5B_u5h" name="类图">
-    <mxGraphModel dx="4598" dy="2044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3010" dy="1183" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6217,15 +6217,20 @@
     </mxGraphModel>
   </diagram>
   <diagram id="HR03sQAtjs6_pPybU8sF" name="创建流程">
-    <mxGraphModel dx="-407" dy="-1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-753" dy="-1401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PEHOnF-zmgiqxHjJK-Lf-1" target="PEHOnF-zmgiqxHjJK-Lf-13">
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PEHOnF-zmgiqxHjJK-Lf-1" target="PEHOnF-zmgiqxHjJK-Lf-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-7" value="创建之后, 塞入FRepChangelistState.StaticBuffer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PEHOnF-zmgiqxHjJK-Lf-16">
+          <mxGeometry x="-0.0541" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="PEHOnF-zmgiqxHjJK-Lf-1" value="FRepStateStaticBuffer" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="4660" y="3370" width="470" height="320" as="geometry" />
+          <mxGeometry x="2820" y="3310" width="470" height="320" as="geometry" />
         </mxCell>
         <mxCell id="PEHOnF-zmgiqxHjJK-Lf-2" value="&lt;div&gt;/**&lt;/div&gt;&lt;div&gt;&amp;nbsp;* Holds deep copies of replicated property data for objects.&lt;/div&gt;&lt;div&gt;&amp;nbsp;* The term &quot;shadow data&quot; is often used in code to refer to memory stored in one of these buffers.&lt;/div&gt;&lt;div&gt;&amp;nbsp;* Note, dynamic memory allocated by the properties (such as Arrays or Maps) will still be dynamically&lt;/div&gt;&lt;div&gt;&amp;nbsp;* allocated elsewhere, and the buffer will hold pointers to the dynamic memory (or containers, etc.)&lt;/div&gt;&lt;div&gt;&amp;nbsp;*&lt;/div&gt;&lt;div&gt;&amp;nbsp;* When necessary, use FRepShadowDataBuffer or FConstRepShadowDataBuffer to wrap this object&#39;s data.&lt;/div&gt;&lt;div&gt;&amp;nbsp;* Never use FRepObjectDataBuffer or FConstRepObjectDataBuffer as the shadow memory layout is not guaranteed&lt;/div&gt;&lt;div&gt;&amp;nbsp;* to match an object&#39;s layout.&lt;/div&gt;&lt;div&gt;&amp;nbsp;*/&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#008000;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-1">
           <mxGeometry y="26" width="470" height="224" as="geometry" />
@@ -6236,8 +6241,18 @@
         <mxCell id="PEHOnF-zmgiqxHjJK-Lf-4" value="TSharedRef&amp;lt;const FRepLayout&amp;gt; RepLayout;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-1">
           <mxGeometry y="290" width="470" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PEHOnF-zmgiqxHjJK-Lf-5" target="amNQEEVDFmRpj5mbmkaZ-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4550" y="3490" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-8" value="创建之后塞入FReplicationChangelistMgr.RepChangelistState&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="amNQEEVDFmRpj5mbmkaZ-5">
+          <mxGeometry x="-0.2442" y="1" relative="1" as="geometry">
+            <mxPoint x="71" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="PEHOnF-zmgiqxHjJK-Lf-5" value="FRepChangelistState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="3770" y="3100" width="522" height="594" as="geometry" />
+          <mxGeometry x="3520" y="3430" width="522" height="594" as="geometry" />
         </mxCell>
         <mxCell id="PEHOnF-zmgiqxHjJK-Lf-6" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Stores changelist history (that are used to know what properties have changed) for objects.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Only a fixed number of history items are kept. Once that limit is reached, old entries are&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* merged into a single monolithic changelist (this happens incrementally each time a new entry&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* is added).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*/&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
           <mxGeometry y="26" width="522" height="114" as="geometry" />
@@ -6269,8 +6284,58 @@
         <mxCell id="PEHOnF-zmgiqxHjJK-Lf-15" value="const UE4PushModelPrivate::FPushModelPerNetDriverHandle PushModelObjectHandle;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
           <mxGeometry y="544" width="522" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="rAupt6TZ98uaFrarOzV2-1" value="FReplicationChangelistMgr" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3030" y="3520" width="180" height="40" as="geometry" />
+        <mxCell id="kKDj9i4Shq8d8HALKK39-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="amNQEEVDFmRpj5mbmkaZ-1" target="kKDj9i4Shq8d8HALKK39-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-13" value="创建之后塞入UNetDriver.ReplicationChangeListMap&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kKDj9i4Shq8d8HALKK39-12">
+          <mxGeometry x="-0.1076" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-1" value="FReplicationChangelistMgr" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="4290" y="3910" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-2" value="uint32 LastReplicationFrame;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="amNQEEVDFmRpj5mbmkaZ-1">
+          <mxGeometry y="26" width="240" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-3" value="uint32 LastInitialReplicationFrame;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="amNQEEVDFmRpj5mbmkaZ-1">
+          <mxGeometry y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="amNQEEVDFmRpj5mbmkaZ-4" value="FRepChangelistState RepChangelistState;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="amNQEEVDFmRpj5mbmkaZ-1">
+          <mxGeometry y="90" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-1" value="UNetDriver" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="4906" y="4000" width="470" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-2" value="TMap&amp;lt; UObject*, FReplicationChangelistMgrWrapper &amp;gt;	ReplicationChangeListMap;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="26" width="470" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-3" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="72" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-4" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="112" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-5" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="172" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-6" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="212" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-7" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="302" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-8" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="342" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-9" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="372" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-10" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="402" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kKDj9i4Shq8d8HALKK39-11" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kKDj9i4Shq8d8HALKK39-1">
+          <mxGeometry y="472" width="470" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
