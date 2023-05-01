@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-01T07:41:31.432Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="C-fkvunL-FFv_XAPMl36" version="21.2.2" type="github" pages="16">
+<mxfile host="app.diagrams.net" modified="2023-05-01T07:45:15.668Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="czjIxSZnpYRR2NKFELBt" version="21.2.2" type="github" pages="16">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -5554,7 +5554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2qx7iZ9YFfvBmF5B_u5h" name="类图">
-    <mxGraphModel dx="2165" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2630" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5694,7 +5694,7 @@
           <mxGeometry y="588" width="470" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-85" value="FReplicationChangelistMgr" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1560" y="1694" width="470" height="120" as="geometry" />
+          <mxGeometry x="1620" y="1690" width="470" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-86" value="uint32 LastReplicationFrame;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-85">
           <mxGeometry y="26" width="470" height="34" as="geometry" />
@@ -5706,7 +5706,7 @@
           <mxGeometry y="90" width="470" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-159" value="FRepChangelistState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="3400" y="1400" width="522" height="604" as="geometry" />
+          <mxGeometry x="3170" y="1513" width="522" height="604" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-170" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Stores changelist history (that are used to know what properties have changed) for objects.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Only a fixed number of history items are kept. Once that limit is reached, old entries are&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* merged into a single monolithic changelist (this happens incrementally each time a new entry&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* is added).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*/&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
           <mxGeometry y="26" width="522" height="124" as="geometry" />
@@ -5739,10 +5739,15 @@
           <mxGeometry y="554" width="522" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-49" target="Dl1oDDIPVmWzN5uZ3yZM-201">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="1835" />
+              <mxPoint x="1540" y="1013" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-173" value="FRepState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1560" y="2050" width="470" height="160" as="geometry" />
+          <mxGeometry x="1410" y="2410" width="470" height="160" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-174" value="&lt;font color=&quot;#008000&quot;&gt;/** Replication State that is unique Per Object Per Net Connection. */&lt;/font&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-173">
           <mxGeometry y="26" width="470" height="44" as="geometry" />
@@ -5757,7 +5762,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-188" value="FReceivingRepState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="2380" y="1950" width="470" height="280" as="geometry" />
+          <mxGeometry x="2240" y="2158" width="470" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-189" value="&lt;font color=&quot;#008000&quot;&gt;/** Replication State needed to track received properties. */&lt;/font&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
           <mxGeometry y="26" width="470" height="44" as="geometry" />
@@ -5861,18 +5866,6 @@
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-230" value="TUniquePtr&amp;lt;TArray&amp;lt;FHandleToCmdIndex&amp;gt;&amp;gt; HandleToCmdIndex;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-227">
           <mxGeometry y="100" width="470" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-239" value="FRepLayoutCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="3497" y="840" width="470" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-240" value="&lt;font color=&quot;#008000&quot;&gt;/** Converts a relative handle to the appropriate index into the Cmds array */&lt;/font&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-239">
-          <mxGeometry y="26" width="470" height="34" as="geometry" />
-        </mxCell>
-        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-241" value="int32 CmdIndex;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-239">
-          <mxGeometry y="60" width="470" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-242" value="TUniquePtr&amp;lt;TArray&amp;lt;FHandleToCmdIndex&amp;gt;&amp;gt; HandleToCmdIndex;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-239">
-          <mxGeometry y="110" width="470" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-243" value="FRepParentCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
           <mxGeometry x="2300" y="120" width="480" height="700" as="geometry" />
         </mxCell>
@@ -5928,6 +5921,17 @@
             <Array as="points">
               <mxPoint x="2180" y="1180" />
               <mxPoint x="2180" y="131" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-259" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.098;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-48" target="Dl1oDDIPVmWzN5uZ3yZM-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.042;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-175" target="Dl1oDDIPVmWzN5uZ3yZM-188">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2060" y="2500" />
+              <mxPoint x="2060" y="2170" />
             </Array>
           </mxGeometry>
         </mxCell>
