@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-28T13:57:29.096Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="fhwwWniyDWJvH0qWeEIE" version="21.2.2" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-05-01T07:15:31.387Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="zHT3QUG6Ds0iMG7mO4eu" version="21.2.2" type="github" pages="16">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3010,7 +3010,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="axMUVYBrIQQGsQXTg-1M" name="FRepParentCmd和FRepLayoutCmd的内存布局以及对应关系">
-    <mxGraphModel dx="1728" dy="-232" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2593" dy="236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5549,6 +5549,287 @@
         </mxCell>
         <mxCell id="gagJt-qrNKQ8_dklaaj5-159" value="BuildShadowOffsets&amp;lt;ERepBuildType::Class&amp;gt;(InObjectClass, Parents, Cmds, ShadowDataBufferSize);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-45" y="3570" width="550" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2qx7iZ9YFfvBmF5B_u5h" name="类图">
+    <mxGraphModel dx="2012" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-40" value="FObjectReplicator" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1410" width="470" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-41" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Net GUID for the object we&#39;re replicating. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FNetworkGUID ObjectNetGUID;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-42" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** The amount of memory (in bytes) that we&#39;re using to track Unmapped GUIDs. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 TrackedGuidMemoryBytes;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="70" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-43" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** True if last update (ReplicateActor) produced no replicated properties */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint32 bLastUpdateEmpty : 1;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="120" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-44" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Whether or not the Actor Channel on which we&#39;re replicating has&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;been Opened / Acked by the receiver. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bOpenAckCalled : 1;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-45" value="&lt;div&gt;	&lt;font color=&quot;#008000&quot;&gt;/** True if we need to do an unmapped check next frame. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bForceUpdateUnmapped : 1;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-46" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Whether or not we&#39;ve already replicated properties this frame. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bHasReplicatedProperties : 1;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="270" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-47" value="&lt;div&gt;	&lt;font color=&quot;#008000&quot;&gt;/** Whether or not we are going to use Fast Array Delta Struct Delta Serialization.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;See FFastArraySerializer::FastArrayDeltaSerialize_DeltaSerializeStructs. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bSupportsFastArrayDelta : 1;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="310" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-48" value="TSharedPtr&amp;lt;class FReplicationChangelistMgr&amp;gt; ChangelistMgr;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="370" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-49" value="TSharedPtr&amp;lt;FRepLayout&amp;gt; RepLayout;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="410" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-50" value="TUniquePtr&amp;lt;FRepState&amp;gt;&amp;nbsp; RepState;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="440" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-51" value="TUniquePtr&amp;lt;FRepState&amp;gt; CheckpointRepState;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="470" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-52" value="UClass* ObjectClass;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="500" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-83" value="UObject* ObjectPtr;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-82" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Connection this replicator was created on. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	UNetConnection* Connection;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="560" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-81" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** The Actor Channel that we&#39;re replicating on.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;This expected to be owned by Connection. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;class UActorChannel* OwningChannel;&lt;/div&gt;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="600" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-80" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Meta information on pending net RPCs (to be sent) */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRPCCallInfo&amp;gt; RemoteFuncInfo;&lt;/div&gt;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="660" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-79" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 128, 0); background-color: initial;&quot;&gt;//~ RepNotify properties were moved to FReceivingRepState.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;//~ CustomDeltaState properties were moved to FSendingRepState.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;//~ Retirement properties were moved to FSendingRepState.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TSet&amp;lt;FNetworkGUID&amp;gt; ReferencedGuids;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="700" width="470" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-84" value="TWeakObjectPtr&amp;lt;UObject&amp;gt; WeakObjectPtr;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry y="780" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-53" value="UActorChannel&amp;nbsp;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1540" width="470" height="618" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-54" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-55" value="TSharedPtr&amp;lt;FObjectReplicator&amp;gt; ActorReplicator;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="70" width="470" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-56" value="TMap&amp;lt; UObject*, TSharedRef&amp;lt; FObjectReplicator &amp;gt; &amp;gt; ReplicationMap;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="98" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-57" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="188" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-58" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="228" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-59" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="288" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-60" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="328" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-61" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="418" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-62" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="458" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-63" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="488" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-64" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="518" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-65" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-53">
+          <mxGeometry y="588" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-66" value="UActorChannel&amp;nbsp;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="-700" y="1570" width="470" height="618" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-67" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Net GUID for the object we&#39;re replicating. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FNetworkGUID ObjectNetGUID;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-68" value="TSharedPtr&amp;lt;FObjectReplicator&amp;gt; ActorReplicator;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="70" width="470" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-69" value="TMap&amp;lt; UObject*, TSharedRef&amp;lt; FObjectReplicator &amp;gt; &amp;gt; ReplicationMap;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="98" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-70" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="188" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-71" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="228" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-72" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="288" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-73" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="328" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-74" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="418" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-75" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="458" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-76" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="488" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-77" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="518" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-78" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-66">
+          <mxGeometry y="588" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-85" value="FReplicationChangelistMgr" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="1370" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-86" value="uint32 LastReplicationFrame;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-85">
+          <mxGeometry y="26" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-87" value="uint32 LastInitialReplicationFrame;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-85">
+          <mxGeometry y="60" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-88" value="FRepChangelistState RepChangelistState;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-85">
+          <mxGeometry y="90" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-104" value="FRepLayout" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="1090" width="470" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-105" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Net GUID for the object we&#39;re replicating. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;FNetworkGUID ObjectNetGUID;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-106" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** The amount of memory (in bytes) that we&#39;re using to track Unmapped GUIDs. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 TrackedGuidMemoryBytes;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="70" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-107" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** True if last update (ReplicateActor) produced no replicated properties */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint32 bLastUpdateEmpty : 1;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="120" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-108" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Whether or not the Actor Channel on which we&#39;re replicating has&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;been Opened / Acked by the receiver. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bOpenAckCalled : 1;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-109" value="&lt;div&gt;	&lt;font color=&quot;#008000&quot;&gt;/** True if we need to do an unmapped check next frame. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bForceUpdateUnmapped : 1;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-110" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Whether or not we&#39;ve already replicated properties this frame. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bHasReplicatedProperties : 1;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="270" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-111" value="&lt;div&gt;	&lt;font color=&quot;#008000&quot;&gt;/** Whether or not we are going to use Fast Array Delta Struct Delta Serialization.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;See FFastArraySerializer::FastArrayDeltaSerialize_DeltaSerializeStructs. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint32 bSupportsFastArrayDelta : 1;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="310" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-112" value="TSharedPtr&amp;lt;class FReplicationChangelistMgr&amp;gt; ChangelistMgr;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="370" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-113" value="TSharedPtr&amp;lt;FRepLayout&amp;gt; RepLayout;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="410" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-114" value="TUniquePtr&amp;lt;FRepState&amp;gt;&amp;nbsp; RepState;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="440" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-115" value="TUniquePtr&amp;lt;FRepState&amp;gt; CheckpointRepState;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="470" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-116" value="UClass* ObjectClass;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="500" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-117" value="UObject* ObjectPtr;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-118" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Connection this replicator was created on. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	UNetConnection* Connection;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="560" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-119" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** The Actor Channel that we&#39;re replicating on.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;This expected to be owned by Connection. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;class UActorChannel* OwningChannel;&lt;/div&gt;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="600" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-120" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Meta information on pending net RPCs (to be sent) */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FRPCCallInfo&amp;gt; RemoteFuncInfo;&lt;/div&gt;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="660" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-121" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 128, 0); background-color: initial;&quot;&gt;//~ RepNotify properties were moved to FReceivingRepState.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;//~ CustomDeltaState properties were moved to FSendingRepState.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;//~ Retirement properties were moved to FSendingRepState.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TSet&amp;lt;FNetworkGUID&amp;gt; ReferencedGuids;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="700" width="470" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-122" value="TWeakObjectPtr&amp;lt;UObject&amp;gt; WeakObjectPtr;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry y="780" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-159" value="FRepChangelistState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="3400" y="1400" width="522" height="604" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-170" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Stores changelist history (that are used to know what properties have changed) for objects.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Only a fixed number of history items are kept. Once that limit is reached, old entries are&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* merged into a single monolithic changelist (this happens incrementally each time a new entry&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* is added).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*/&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="26" width="522" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-160" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** The maximum number of individual changelists allowed.*/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	static const int32 MAX_CHANGE_HISTORY = 64;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="150" width="522" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-161" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Circular buffer of changelists. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepChangedHistory ChangeHistory[MAX_CHANGE_HISTORY];&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="204" width="522" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-162" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Changelist state specific to Custom Delta properties.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; Only allocated if this RepLayout has Custom Delta Properties. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TUniquePtr&amp;lt;struct FCustomDeltaChangelistState&amp;gt; CustomDeltaChangelistState;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="254" width="522" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-163" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Index in the buffer where changelist history starts (i.e., the Oldest changelist). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 HistoryStart;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="324" width="522" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-164" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Index in the buffer where changelist history ends (i.e., the Newest changelist). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 HistoryEnd;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="374" width="522" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-165" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Number of times that properties have been compared */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 CompareIndex;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="414" width="522" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-166" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Latest state of all property data. Not used on Clients,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;only used on Servers if Shadow State is enabled. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepStateStaticBuffer StaticBuffer;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="454" width="522" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-167" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Latest state of all shared serialization data. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepSerializationSharedInfo SharedSerialization;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="514" width="522" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-168" value="const UE4PushModelPrivate::FPushModelPerNetDriverHandle PushModelObjectHandle;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-159">
+          <mxGeometry y="554" width="522" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-49" target="Dl1oDDIPVmWzN5uZ3yZM-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-173" value="FRepState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="2050" width="470" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-174" value="/** Replication State that is unique Per Object Per Net Connection. */" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-173">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-175" value="&lt;div&gt;/** May be null on connections that don&#39;t receive properties. */&lt;/div&gt;&lt;div&gt;	TUniquePtr&amp;lt;FReceivingRepState&amp;gt; ReceivingRepState;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-173">
+          <mxGeometry y="70" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-176" value="&lt;div&gt;/** May be null on connections that don&#39;t send properties. */&lt;/div&gt;&lt;div&gt;	TUniquePtr&amp;lt;FSendingRepState&amp;gt; SendingRepState;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-173">
+          <mxGeometry y="110" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.09;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-50" target="Dl1oDDIPVmWzN5uZ3yZM-173">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-188" value="FReceivingRepState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="1950" width="470" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-189" value="/** Replication State needed to track received properties. */" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-190" value="&lt;div&gt;/** Latest state of all property data. Only valid on clients. */&lt;/div&gt;&lt;div&gt;	FRepStateStaticBuffer StaticBuffer;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
+          <mxGeometry y="70" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-191" value="&lt;div&gt;/** Map of Absolute Property Offset to GUID Reference for properties. */&lt;/div&gt;&lt;div&gt;	FGuidReferencesMap GuidReferencesMap;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
+          <mxGeometry y="110" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-192" value="&lt;div&gt;/** List of properties that have RepNotifies that we will need to call on Clients. */&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;FProperty*&amp;gt; RepNotifies;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
+          <mxGeometry y="160" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-193" value="&lt;div&gt;/**&lt;/div&gt;&lt;div&gt;	 * Holds MetaData (such as array index) for RepNotifies.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * Only used for CustomDeltaProperties.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;TMap&amp;lt;FProperty*, TArray&amp;lt;uint8&amp;gt;&amp;gt; RepNotifyMetaData;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-188">
+          <mxGeometry y="200" width="470" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
