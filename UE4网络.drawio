@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-01T07:25:02.013Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="IwGV3aX4NOUUI5xhuHDg" version="21.2.2" type="github" pages="16">
+<mxfile host="app.diagrams.net" modified="2023-05-01T07:41:31.432Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="C-fkvunL-FFv_XAPMl36" version="21.2.2" type="github" pages="16">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -5554,7 +5554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2qx7iZ9YFfvBmF5B_u5h" name="类图">
-    <mxGraphModel dx="2257" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2165" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5694,7 +5694,7 @@
           <mxGeometry y="588" width="470" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-85" value="FReplicationChangelistMgr" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="2380" y="1370" width="470" height="120" as="geometry" />
+          <mxGeometry x="1560" y="1694" width="470" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-86" value="uint32 LastReplicationFrame;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-85">
           <mxGeometry y="26" width="470" height="34" as="geometry" />
@@ -5812,6 +5812,124 @@
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-213" value="TMap&amp;lt;FRepLayoutCmd*, TArray&amp;lt;FRepLayoutCmd&amp;gt;&amp;gt; NetSerializeLayouts;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-201">
           <mxGeometry y="550" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-214" value="FRepLayoutCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2305" y="850" width="470" height="588" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-215" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Represents a single property, which could be either a Top Level Property, a Nested Struct Property,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* or an element in a Dynamic Array.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* @see FRepLayout&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*/&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="26" width="470" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-216" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Pointer back to property, used for NetSerialize calls, etc. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FProperty* Property;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="140" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-217" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** For arrays, this is the cmd index to jump to, to skip this arrays inner elements. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 EndCmd;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="190" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-218" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** For arrays, element size of data. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 ElementSize;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="240" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-219" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Absolute offset of property in Object Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 Offset;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="280" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-220" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Absolute offset of property in Shadow Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 ShadowOffset;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="320" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-221" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Handle relative to start of array, or top list. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 RelativeHandle;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="360" width="470" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-222" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Index into Parents. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 ParentIndex;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="408" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-223" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Used to determine if property is still compatible */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint32 CompatibleChecksum;&lt;/div&gt;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="448" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-224" value="ERepLayoutCmdType Type;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="498" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-225" value="ERepLayoutCmdFlags Flags;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry y="548" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-227" value="FHandleToCmdIndex" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2305" y="1500" width="470" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-228" value="&lt;font color=&quot;#008000&quot;&gt;/** Converts a relative handle to the appropriate index into the Cmds array */&lt;/font&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-227">
+          <mxGeometry y="26" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-229" value="int32 CmdIndex;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-227">
+          <mxGeometry y="60" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-230" value="TUniquePtr&amp;lt;TArray&amp;lt;FHandleToCmdIndex&amp;gt;&amp;gt; HandleToCmdIndex;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-227">
+          <mxGeometry y="100" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-239" value="FRepLayoutCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="3497" y="840" width="470" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-240" value="&lt;font color=&quot;#008000&quot;&gt;/** Converts a relative handle to the appropriate index into the Cmds array */&lt;/font&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-239">
+          <mxGeometry y="26" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-241" value="int32 CmdIndex;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-239">
+          <mxGeometry y="60" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-242" value="TUniquePtr&amp;lt;TArray&amp;lt;FHandleToCmdIndex&amp;gt;&amp;gt; HandleToCmdIndex;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-239">
+          <mxGeometry y="110" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-243" value="FRepParentCmd" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2300" y="120" width="480" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-244" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// A Top Level Property of a UClass, UStruct, or&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;UFunction (arguments to a UFunction).&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#008000&quot;&gt;// @see FRepLayout&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="26" width="480" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-245" value="FProperty* Property;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="70" width="480" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-246" value="const FName CachedPropertyName;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="98" width="480" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-247" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	 * If the Property is a C-Style fixed size array, then a command will be created for every element in the array.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * This is the index of the element in the array for which the command represents.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; *&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * This will always be 0 for non array properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 ArrayIndex;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="130" width="480" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-248" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Absolute offset of property in Object Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 Offset;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="260" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-249" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Absolute offset of property in Shadow Memory. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 ShadowOffset;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="300" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-250" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	 * CmdStart and CmdEnd define the range of FRepLayoutCommands (by index in FRepLayouts Cmd array) of commands&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * that are associated with this Parent Command.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; *&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * This is used to track and access nested Properties from the parent.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;uint16 CmdStart;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="340" width="480" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-251" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** @see CmdStart */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	uint16 CmdEnd;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="470" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-252" value="ELifetimeCondition Condition;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="510" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-253" value="ELifetimeRepNotifyCondition RepNotifyCondition;" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="540" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-254" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	 * Number of parameters that we need to pass to the RepNotify function (if any).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * If this value is INDEX_NONE, it means there is no RepNotify function associated&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; * with the property.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt; */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 RepNotifyNumParams;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="570" width="480" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-255" value="ERepParentFlags Flags;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry y="670" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-256" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.093;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-207" target="Dl1oDDIPVmWzN5uZ3yZM-227">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2210" y="1260" />
+              <mxPoint x="2210" y="1513" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-206" target="Dl1oDDIPVmWzN5uZ3yZM-214">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-258" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.016;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-205" target="Dl1oDDIPVmWzN5uZ3yZM-243">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2180" y="1180" />
+              <mxPoint x="2180" y="131" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
