@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-01T08:17:26.737Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ge1fE-gzYHBfcfmJZ-zf" version="21.2.2" type="github" pages="16">
+<mxfile host="app.diagrams.net" modified="2023-05-01T11:25:04.096Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="lSSnQ7QLtjqN47Qw_bg7" version="21.2.2" type="github" pages="17">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3010,7 +3010,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="axMUVYBrIQQGsQXTg-1M" name="FRepParentCmd和FRepLayoutCmd的内存布局以及对应关系">
-    <mxGraphModel dx="2593" dy="236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1803" dy="-192" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5554,7 +5554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="2qx7iZ9YFfvBmF5B_u5h" name="类图">
-    <mxGraphModel dx="1919" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4598" dy="2044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6151,6 +6151,120 @@
         </mxCell>
         <mxCell id="Dl1oDDIPVmWzN5uZ3yZM-412" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Same as RecentCustomDeltaState, but will represent the state at the last checkpoint. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;TSharedPtr&amp;lt;INetDeltaBaseState&amp;gt;&amp;gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;CheckpointCustomDeltaState;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Dl1oDDIPVmWzN5uZ3yZM-387">
           <mxGeometry y="1270" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-1" value="UNetDriver" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2330" width="470" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-4" value="TMap&amp;lt; UObject*, FReplicationChangelistMgrWrapper &amp;gt;	ReplicationChangeListMap;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="26" width="470" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-5" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="72" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-6" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="112" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-7" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="172" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-8" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="212" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-9" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="302" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-10" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="342" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-11" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="372" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-12" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="402" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-13" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-1">
+          <mxGeometry y="472" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-14" value="FReplicationChangelistMgrWrapper" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="800" y="2320" width="380" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-15" value="TSharedPtr&amp;lt;FReplicationChangelistMgr&amp;gt; ReplicationChangelistMgr;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-14">
+          <mxGeometry y="26" width="380" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-16" value="TWeakObjectPtr&amp;lt;UObject&amp;gt; WeakObjectPtr;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="OwYpVBinPIcQ0ChSZhRY-14">
+          <mxGeometry y="72" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.01;entryY=0.112;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OwYpVBinPIcQ0ChSZhRY-4" target="OwYpVBinPIcQ0ChSZhRY-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="2379" />
+              <mxPoint x="745" y="2333" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.104;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OwYpVBinPIcQ0ChSZhRY-15" target="Dl1oDDIPVmWzN5uZ3yZM-85">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="2369" />
+              <mxPoint x="1300" y="1703" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwYpVBinPIcQ0ChSZhRY-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Dl1oDDIPVmWzN5uZ3yZM-56" target="Dl1oDDIPVmWzN5uZ3yZM-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HR03sQAtjs6_pPybU8sF" name="第 17 页">
+    <mxGraphModel dx="-1234" dy="-1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-1" value="FRepStateStaticBuffer" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="4520" y="3070" width="470" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-2" value="&lt;div&gt;/**&lt;/div&gt;&lt;div&gt;&amp;nbsp;* Holds deep copies of replicated property data for objects.&lt;/div&gt;&lt;div&gt;&amp;nbsp;* The term &quot;shadow data&quot; is often used in code to refer to memory stored in one of these buffers.&lt;/div&gt;&lt;div&gt;&amp;nbsp;* Note, dynamic memory allocated by the properties (such as Arrays or Maps) will still be dynamically&lt;/div&gt;&lt;div&gt;&amp;nbsp;* allocated elsewhere, and the buffer will hold pointers to the dynamic memory (or containers, etc.)&lt;/div&gt;&lt;div&gt;&amp;nbsp;*&lt;/div&gt;&lt;div&gt;&amp;nbsp;* When necessary, use FRepShadowDataBuffer or FConstRepShadowDataBuffer to wrap this object&#39;s data.&lt;/div&gt;&lt;div&gt;&amp;nbsp;* Never use FRepObjectDataBuffer or FConstRepObjectDataBuffer as the shadow memory layout is not guaranteed&lt;/div&gt;&lt;div&gt;&amp;nbsp;* to match an object&#39;s layout.&lt;/div&gt;&lt;div&gt;&amp;nbsp;*/&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=#008000;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-1">
+          <mxGeometry y="26" width="470" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-3" value="&lt;div&gt;// Properties will be copied in here so memory needs aligned to largest type&lt;/div&gt;&lt;div&gt;	TArray&amp;lt;uint8, TAlignedHeapAllocator&amp;lt;16&amp;gt;&amp;gt; Buffer;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-1">
+          <mxGeometry y="250" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-4" value="TSharedRef&amp;lt;const FRepLayout&amp;gt; RepLayout;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-1">
+          <mxGeometry y="290" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-5" value="FRepChangelistState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="3770" y="3100" width="522" height="594" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-6" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/**&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Stores changelist history (that are used to know what properties have changed) for objects.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* Only a fixed number of history items are kept. Once that limit is reached, old entries are&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* merged into a single monolithic changelist (this happens incrementally each time a new entry&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;* is added).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp;*/&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="26" width="522" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-7" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** The maximum number of individual changelists allowed.*/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	static const int32 MAX_CHANGE_HISTORY = 64;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="140" width="522" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-8" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Circular buffer of changelists. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepChangedHistory ChangeHistory[MAX_CHANGE_HISTORY];&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="194" width="522" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-9" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Changelist state specific to Custom Delta properties.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; Only allocated if this RepLayout has Custom Delta Properties. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	TUniquePtr&amp;lt;struct FCustomDeltaChangelistState&amp;gt; CustomDeltaChangelistState;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="244" width="522" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-10" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Index in the buffer where changelist history starts (i.e., the Oldest changelist). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 HistoryStart;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="314" width="522" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-11" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** Index in the buffer where changelist history ends (i.e., the Newest changelist). */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 HistoryEnd;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="364" width="522" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-12" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Number of times that properties have been compared */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 CompareIndex;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="404" width="522" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-13" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Latest state of all property data. Not used on Clients,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;only used on Servers if Shadow State is enabled. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepStateStaticBuffer StaticBuffer;&lt;/div&gt;" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="444" width="522" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-14" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** Latest state of all shared serialization data. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	FRepSerializationSharedInfo SharedSerialization;&lt;/div&gt;" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="504" width="522" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PEHOnF-zmgiqxHjJK-Lf-15" value="const UE4PushModelPrivate::FPushModelPerNetDriverHandle PushModelObjectHandle;" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PEHOnF-zmgiqxHjJK-Lf-5">
+          <mxGeometry y="544" width="522" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
