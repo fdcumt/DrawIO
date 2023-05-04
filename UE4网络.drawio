@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-04T02:18:02.917Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="P8DNbKAY6X7IwJiisLqP" version="21.2.2" type="github" pages="22">
+<mxfile host="app.diagrams.net" modified="2023-05-04T06:19:12.848Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="BHg3ocAZPkDApaP9Yysd" version="21.2.2" type="github" pages="22">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7395,7 +7395,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZqW54iOa4JDYh-6K-3oA" name="NetworkGuid类图">
-    <mxGraphModel dx="3084" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3382" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -7639,7 +7639,7 @@
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-106" value="ExportNetGUIDCount" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1110" y="2060" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9pi4GOSWgoO7JIMKlRTa-107" value="0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-107" value="2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1110" y="2140" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-121" value="1bit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -7675,6 +7675,19 @@
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-374" value="类型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="780" y="2100" width="90" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-407" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9pi4GOSWgoO7JIMKlRTa-375" target="9pi4GOSWgoO7JIMKlRTa-385">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="1960" />
+              <mxPoint x="1893" y="1960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-408" value="Default__NewPlayerController_C的Outer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9pi4GOSWgoO7JIMKlRTa-407">
+          <mxGeometry x="0.027" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-375" value="Default__NewPlayerController_C的GUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1280" y="2060" width="240" height="40" as="geometry" />
         </mxCell>
@@ -7689,6 +7702,14 @@
         </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-379" value="FNetworkGUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1280" y="2100" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-410" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9pi4GOSWgoO7JIMKlRTa-380" target="9pi4GOSWgoO7JIMKlRTa-375">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-411" value="前一个对象的ExportFlags" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9pi4GOSWgoO7JIMKlRTa-410">
+          <mxGeometry x="0.1282" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-380" value="前一个对象的ExportFlags.Value&lt;br&gt;(bHasPath:1, bNoLoad:0,bHasNetworkChecksum:1)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1520" y="2060" width="290" height="40" as="geometry" />
@@ -7705,6 +7726,19 @@
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-384" value="FExportFlags" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1520" y="2100" width="290" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-412" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9pi4GOSWgoO7JIMKlRTa-385" target="9pi4GOSWgoO7JIMKlRTa-416">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1975" y="1990" />
+              <mxPoint x="2610" y="1990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-413" value="/Game/GamePlay/NewPlayerController的Outer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9pi4GOSWgoO7JIMKlRTa-412">
+          <mxGeometry x="-0.0707" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-385" value="PackageObj(/Game/GamePlay/NewPlayerController)的GUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1810" y="2060" width="330" height="40" as="geometry" />
         </mxCell>
@@ -7719,6 +7753,19 @@
         </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-389" value="FNetworkGUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1810" y="2100" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-414" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9pi4GOSWgoO7JIMKlRTa-395" target="9pi4GOSWgoO7JIMKlRTa-385">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2358" y="2040" />
+              <mxPoint x="2058" y="2040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-415" value="/Game/GamePlay/NewPlayerController的ExportFlags" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9pi4GOSWgoO7JIMKlRTa-414">
+          <mxGeometry x="0.0193" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-395" value="前一个对象的ExportFlags.Value&lt;br&gt;(bHasPath:1, bNoLoad:0,bHasNetworkChecksum:1)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2140" y="2060" width="290" height="40" as="geometry" />
@@ -7735,20 +7782,161 @@
         <mxCell id="9pi4GOSWgoO7JIMKlRTa-399" value="FExportFlags" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2140" y="2100" width="290" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9pi4GOSWgoO7JIMKlRTa-400" value="PackageObj(/Game/GamePlay/NewPlayerController)的GUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2430" y="2060" width="330" height="40" as="geometry" />
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-416" value="PackageObj(/Game/GamePlay/NewPlayerController)的PathName" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="2060" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9pi4GOSWgoO7JIMKlRTa-401" value="11" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2430" y="2140" width="330" height="40" as="geometry" />
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-417" value="/Game/GamePlay/NewPlayerController" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="2140" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9pi4GOSWgoO7JIMKlRTa-402" value="57" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2430" y="2220" width="330" height="40" as="geometry" />
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-418" value="105" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="2220" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9pi4GOSWgoO7JIMKlRTa-403" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2430" y="2180" width="330" height="40" as="geometry" />
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-419" value="40" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="2180" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9pi4GOSWgoO7JIMKlRTa-404" value="FNetworkGUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2430" y="2100" width="330" height="40" as="geometry" />
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-420" value="FString" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-421" value="PackageObj(/Game/GamePlay/NewPlayerController)的PathName" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-422" value="/Game/GamePlay/NewPlayerController" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-423" value="385" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-424" value="280" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-425" value="FString" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-426" value="PackageObj(/Game/GamePlay/NewPlayerController)的PathName" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3150" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-427" value="/Game/GamePlay/NewPlayerController" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3150" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-428" value="417" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3150" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-429" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3150" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-430" value="FString" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3150" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-431" value="CDO(Default__NewPlayerController_C)的PathName" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3510" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-432" value="Default__NewPlayerController_C" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3510" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-433" value="449" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3510" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-434" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3510" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-435" value="FString" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3510" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-436" value="CDO(Default__NewPlayerController_C)的PathName" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3870" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-437" value="Default__NewPlayerController_C" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3870" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-438" value="697" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3870" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-439" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3870" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-440" value="FString" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3870" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-441" value="Default__NewPlayerController_C的NetworkChecksum" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4230" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-442" value="---" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4230" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-443" value="729" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4230" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-444" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4230" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-445" value="uint32" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4230" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-446" value="ULevel(PersistentLevel)的GUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4590" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-447" value="3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4590" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-448" value="737" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4590" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-449" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4590" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-450" value="FNetworkGUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4590" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-456" value="前一个对象的ExportFlags.Value&lt;br&gt;(bHasPath:1, bNoLoad:1,bHasNetworkChecksum:1)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4950" y="2060" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-457" value="7" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4950" y="2140" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-458" value="745" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4950" y="2220" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-459" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4950" y="2180" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-460" value="FExportFlags" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4950" y="2100" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-461" value="UWorld(ThirdPersonExampleMap)的GUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5240" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-462" value="5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5240" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-463" value="753" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5240" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-464" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5240" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-465" value="FNetworkGUID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5240" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-466" value="前一个对象的ExportFlags.Value&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;(bHasPath:1, bNoLoad:1,bHasNetworkChecksum:1)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5600" y="2060" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-467" value="7" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5600" y="2140" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-468" value="761" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5600" y="2220" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-469" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5600" y="2180" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-470" value="FExportFlags" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5600" y="2100" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-472" value="UPackageMapClient.ExportBunches&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="2470" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9pi4GOSWgoO7JIMKlRTa-473" value="NormalBunches" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="2470" width="240" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
