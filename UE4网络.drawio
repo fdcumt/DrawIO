@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-04T13:43:56.003Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="paKDXnwLG1Aem_RjOQzl" version="21.2.2" type="github" pages="23">
+<mxfile host="app.diagrams.net" modified="2023-05-04T13:47:26.165Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="V_eFfxc66MMssxay-_pV" version="21.2.2" type="github" pages="23">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7994,7 +7994,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="8lAOaqJoITeH2X2OJsZm" name="ExportBunch填充流程">
-    <mxGraphModel dx="2012" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2901" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8059,6 +8059,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-112" value="递归处理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NfbHfqZkC8DYcyozZRhp-40">
+          <mxGeometry x="-0.7296" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="NfbHfqZkC8DYcyozZRhp-30" value="InternalWriteObject( Ar, OuterNetGUID, ObjectOuter, TEXT( &quot;&quot; ), NULL );" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="135" y="930" width="420" height="30" as="geometry" />
         </mxCell>
@@ -8067,6 +8072,16 @@
         </mxCell>
         <mxCell id="NfbHfqZkC8DYcyozZRhp-32" value="Ar &amp;lt;&amp;lt; ObjectPathName;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="265" y="1000" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NfbHfqZkC8DYcyozZRhp-33" target="a27ZpEDaH_P2lzDVqQIb-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="950.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-111" value="返回上一层程序调用栈" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="a27ZpEDaH_P2lzDVqQIb-110">
+          <mxGeometry x="-0.3897" y="-1" relative="1" as="geometry">
+            <mxPoint x="-73" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="NfbHfqZkC8DYcyozZRhp-33" value="Ar &amp;lt;&amp;lt; NetworkChecksum;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="265" y="1190" width="160" height="30" as="geometry" />
@@ -8219,8 +8234,29 @@
         <mxCell id="a27ZpEDaH_P2lzDVqQIb-103" value="NetGUID是否为0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="287.5" y="730" width="115" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="a27ZpEDaH_P2lzDVqQIb-106" value="CurrentExportBunch&amp;lt;&amp;lt; NetGUID;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-320" y="680" width="290" height="30" as="geometry" />
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-106" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="1074" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="a27ZpEDaH_P2lzDVqQIb-113" target="a27ZpEDaH_P2lzDVqQIb-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-115" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="a27ZpEDaH_P2lzDVqQIb-114">
+          <mxGeometry x="-0.2889" relative="1" as="geometry">
+            <mxPoint x="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="a27ZpEDaH_P2lzDVqQIb-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10.238095238095184" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-117" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="a27ZpEDaH_P2lzDVqQIb-116">
+          <mxGeometry x="0.1071" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a27ZpEDaH_P2lzDVqQIb-113" value="InternalWriteObject是否递归执行结束" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="1049" width="250" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
