@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-05T01:42:26.419Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="RnVSGhI-3xXoFe_A-cW4" version="21.2.2" type="github" pages="22">
+<mxfile host="app.diagrams.net" modified="2023-05-05T07:32:05.155Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ChwK4nqpmlvd2lYl4_x7" version="21.2.2" type="github" pages="23">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -820,6 +820,33 @@
         </mxCell>
         <mxCell id="E0QR-DZiy5wJ7hTgcFCq-23" value="ExportNetGUIDBody" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-1072" y="1090" width="298" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-1" value="RPCBunch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1423" y="1280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-2" value="ExportNetGUIDHeader" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1423" y="1350" width="298" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-3" value="bHasRepLayoutExport" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1423" y="1380" width="148" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-4" value="bool" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1423" y="1410" width="148" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-5" value="NewCount" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1275" y="1380" width="148" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-6" value="uint32" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1274" y="1410" width="148" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-7" value="1Bit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1423" y="1440" width="148" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-8" value="32Bit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1274" y="1440" width="148" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VMumY_dXjmgbhvCuLB_-9" value="ExportNetGUIDBody" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1125" y="1350" width="298" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -6935,7 +6962,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Vpa2GwbvGtKwQcTJqpXm" name="Replication类图">
-    <mxGraphModel dx="9123" dy="3327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3267" dy="153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -7447,7 +7474,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="8lAOaqJoITeH2X2OJsZm" name="ExportBunch填充流程(NetGUID)">
-    <mxGraphModel dx="2630" dy="977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4018" dy="1729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -7834,6 +7861,257 @@
         </mxCell>
         <mxCell id="rqOHs1u7Auaz9-80juWB-5" value="等待所有Outer都处理结束后, 添加ObjectName和CheckSum" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="450" y="1040" width="390" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="hCx6QzRTXkyxm0jA3WyO" name="PushModel">
+    <mxGraphModel dx="603" dy="-394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-1" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="1765" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-3" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-1">
+          <mxGeometry y="26" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-4" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-1">
+          <mxGeometry y="96" width="310" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-14" value="FPushModelPerObjectState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2068" y="1530" width="492" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-15" value="&lt;div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;This is a &quot;state&quot; for a given Object that is being tracked by a Push Model Object Manager.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;This state is shared across all NetDrivers, and so has a 1:1 mapping with actual UObjects.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-14">
+          <mxGeometry y="26" width="492" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-16" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;//! A unique ID for the object.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;		const FObjectKey ObjectKey;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-14">
+          <mxGeometry y="96" width="492" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-17" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;//! Bitfield tracking which properties we&#39;ve dirtied since the last time&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;		//! our state was pushed to NetDrivers.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;//! Note, bits will be allocated for all replicated properties, not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;TBitArray&amp;lt;&amp;gt; DirtiedThisFrame;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-14">
+          <mxGeometry y="140" width="492" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-18" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;//! Set of NetDriver states that have been requested and are currently tracking the object.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;		TSparseArray&amp;lt;FPushModelPerNetDriverState&amp;gt; PerNetDriverStates;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-14">
+          <mxGeometry y="220" width="492" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-26" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="1530" width="470" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-27" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-28" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-29" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-30" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-31" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-32" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="270" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-33" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="360" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-34" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="400" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-35" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="430" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-36" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="460" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-37" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-26">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-38" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="1540" width="470" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-39" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-40" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-41" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-42" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-43" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-44" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="270" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-45" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="360" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-46" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="400" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-47" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="430" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-48" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="460" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-49" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-38">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-50" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="1550" width="470" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-51" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-52" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-53" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-54" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-55" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-56" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="270" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-57" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="360" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-58" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="400" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-59" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="430" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-60" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="460" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-61" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-50">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-62" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="1560" width="470" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-63" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-64" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-65" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-66" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-67" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-68" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="270" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-69" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="360" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-70" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="400" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-71" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="430" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-72" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="460" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-73" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-62">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-74" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1570" width="470" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-75" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-76" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-77" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-78" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-79" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-80" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="270" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-81" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="360" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-82" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="400" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-83" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="430" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-84" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="460" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-85" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-74">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-86" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="1580" width="470" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-87" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-88" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-89" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-90" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="170" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-91" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="230" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-92" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="270" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-93" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="360" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-94" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="400" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-95" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="430" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-96" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="460" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-97" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PYVYHAaMjRNBWqHfKHRF-86">
+          <mxGeometry y="530" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PYVYHAaMjRNBWqHfKHRF-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.12;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PYVYHAaMjRNBWqHfKHRF-18" target="PYVYHAaMjRNBWqHfKHRF-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
