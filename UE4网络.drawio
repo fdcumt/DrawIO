@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-06T02:27:06.072Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="vYND4FbqVryCvFpnZp8f" version="21.2.2" type="github" pages="24">
+<mxfile host="app.diagrams.net" modified="2023-05-06T02:51:43.655Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="hRIj0tOHPi91_0oNi3Pf" version="21.2.2" type="github" pages="24">
   <diagram id="yP7lxpDCNaUI_CZVi8NB" name="链表遍历新方式">
     <mxGraphModel dx="2074" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8072,33 +8072,21 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L5oClrHCrLxm8tMp_tZB" name="TSparseArray详解">
-    <mxGraphModel dx="832" dy="-270" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="325" dy="-545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8iXpOO3Eso-n-UEaEkUn-1" value="TSparseArray" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1830" y="1550" width="492" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="8iXpOO3Eso-n-UEaEkUn-3" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;//! A unique ID for the object.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;		const FObjectKey ObjectKey;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8iXpOO3Eso-n-UEaEkUn-1">
-          <mxGeometry y="26" width="492" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="8iXpOO3Eso-n-UEaEkUn-4" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;//! Bitfield tracking which properties we&#39;ve dirtied since the last time&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;		//! our state was pushed to NetDrivers.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;//! Note, bits will be allocated for all replicated properties, not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;TBitArray&amp;lt;&amp;gt; DirtiedThisFrame;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8iXpOO3Eso-n-UEaEkUn-1">
-          <mxGeometry y="70" width="492" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="8iXpOO3Eso-n-UEaEkUn-5" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;//! Set of NetDriver states that have been requested and are currently tracking the object.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;		TSparseArray&amp;lt;FPushModelPerNetDriverState&amp;gt; PerNetDriverStates;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="8iXpOO3Eso-n-UEaEkUn-1">
-          <mxGeometry y="150" width="492" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="VCTUgfqEn0ciAongpH22-1" value="TSparseArrayElementOrFreeListLink" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="2440" y="1590" width="486" height="150" as="geometry" />
+          <mxGeometry x="2280" y="1679" width="320" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="VCTUgfqEn0ciAongpH22-2" value="&lt;div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#008000&quot;&gt;/** If the element is allocated, its value is stored here. */&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;ElementType ElementData;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VCTUgfqEn0ciAongpH22-1">
-          <mxGeometry y="26" width="486" height="44" as="geometry" />
+        <mxCell id="VCTUgfqEn0ciAongpH22-2" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#008000&quot;&gt;//&amp;nbsp; If the element is allocated,&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 128, 0); background-color: initial;&quot;&gt;its value is stored here. */&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;ElementType ElementData;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VCTUgfqEn0ciAongpH22-1">
+          <mxGeometry y="26" width="320" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="VCTUgfqEn0ciAongpH22-3" value="&lt;span style=&quot;color: rgb(0, 128, 0); background-color: initial;&quot;&gt;// If the element isn&#39;t allocated, this is a link to the previous element in the array&#39;s free list.&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;int32 PrevFreeIndex;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VCTUgfqEn0ciAongpH22-1">
-          <mxGeometry y="70" width="486" height="40" as="geometry" />
+        <mxCell id="VCTUgfqEn0ciAongpH22-3" value="&lt;span style=&quot;color: rgb(0, 128, 0); background-color: initial;&quot;&gt;// If the element isn&#39;t allocated, &lt;br&gt;this is a link to the previous element in the array&#39;s free list.&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;int32 PrevFreeIndex;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VCTUgfqEn0ciAongpH22-1">
+          <mxGeometry y="70" width="320" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="VCTUgfqEn0ciAongpH22-4" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#008000&quot;&gt;// If the element isn&#39;t allocated, this is a link to the next element in the array&#39;s free list.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;int32 NextFreeIndex;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VCTUgfqEn0ciAongpH22-1">
-          <mxGeometry y="110" width="486" height="40" as="geometry" />
+        <mxCell id="VCTUgfqEn0ciAongpH22-4" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#008000&quot;&gt;// If the element isn&#39;t allocated, this is a link to&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#008000&quot;&gt;the next element in the array&#39;s free list.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;int32 NextFreeIndex;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VCTUgfqEn0ciAongpH22-1">
+          <mxGeometry y="120" width="320" height="50" as="geometry" />
         </mxCell>
         <mxCell id="30QO3uDoA559WpyeDdh6-1" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
           <mxGeometry x="900" y="1730" width="470" height="560" as="geometry" />
@@ -8424,56 +8412,38 @@
         <mxCell id="30QO3uDoA559WpyeDdh6-108" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-97">
           <mxGeometry y="530" width="470" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-109" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="990" y="1820" width="470" height="560" as="geometry" />
+        <mxCell id="30QO3uDoA559WpyeDdh6-109" value="TBitArray" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="2280" y="1880" width="430" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-110" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;// Current state of our push model properties.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// Note, bits will be allocated for all replicated properties,&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// not just push model properties.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;TBitArray&amp;lt;&amp;gt; PropertyDirtyStates;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="26" width="470" height="70" as="geometry" />
+        <mxCell id="30QO3uDoA559WpyeDdh6-111" value="int32&amp;nbsp; &amp;nbsp; NumBits;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
+          <mxGeometry y="26" width="430" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-111" value="uint8 bRecentlyCollectedGarbage : 1;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="96" width="470" height="34" as="geometry" />
+        <mxCell id="30QO3uDoA559WpyeDdh6-112" value="int32&amp;nbsp; &amp;nbsp; MaxBits;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
+          <mxGeometry y="60" width="430" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-112" value="" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="130" width="470" height="40" as="geometry" />
+        <mxCell id="30QO3uDoA559WpyeDdh6-135" value="typedef typename Allocator::template ForElementType&amp;lt;uint32&amp;gt; AllocatorType;&lt;br&gt;AllocatorType AllocatorInstance;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
+          <mxGeometry y="100" width="430" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-113" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="170" width="470" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-114" value="" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="230" width="470" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-115" value="" style="text;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="270" width="470" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-116" value="" style="text;strokeColor=#b46504;fillColor=#fad7ac;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="360" width="470" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-117" value="" style="text;strokeColor=#ae4132;fillColor=#fad9d5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="400" width="470" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-118" value="" style="text;strokeColor=#56517e;fillColor=#d0cee2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="430" width="470" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-119" value="" style="text;strokeColor=#10739e;fillColor=#b1ddf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="460" width="470" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-120" value="" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-109">
-          <mxGeometry y="530" width="470" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-121" value="FPushModelPerNetDriverState" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1810" y="1870" width="660" height="220" as="geometry" />
+        <mxCell id="30QO3uDoA559WpyeDdh6-121" value="TSparseArray" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="1750" width="500" height="220" as="geometry" />
         </mxCell>
         <mxCell id="30QO3uDoA559WpyeDdh6-123" value="&lt;div&gt;typedef TArray&amp;lt;FElementOrFreeListLink,typename Allocator::ElementAllocator&amp;gt; DataType;&lt;/div&gt;&lt;div&gt;	DataType Data;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-121">
-          <mxGeometry y="26" width="660" height="44" as="geometry" />
+          <mxGeometry y="26" width="500" height="44" as="geometry" />
         </mxCell>
         <mxCell id="30QO3uDoA559WpyeDdh6-124" value="&lt;div&gt;typedef TBitArray&amp;lt;typename Allocator::BitArrayAllocator&amp;gt; AllocationBitArrayType;&lt;/div&gt;&lt;div&gt;	AllocationBitArrayType AllocationFlags;&lt;/div&gt;" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-121">
-          <mxGeometry y="70" width="660" height="50" as="geometry" />
+          <mxGeometry y="70" width="500" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="30QO3uDoA559WpyeDdh6-125" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;/** The index of an unallocated element in the array that currently contains the head of the linked list of free elements. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 FirstFreeIndex;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-121">
-          <mxGeometry y="120" width="660" height="50" as="geometry" />
+        <mxCell id="30QO3uDoA559WpyeDdh6-125" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// The index of an unallocated element in the array that currently&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;// contains the head of the linked list of free elements.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;	int32 FirstFreeIndex;&lt;/div&gt;" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-121">
+          <mxGeometry y="120" width="500" height="50" as="geometry" />
         </mxCell>
         <mxCell id="30QO3uDoA559WpyeDdh6-126" value="&lt;div&gt;&lt;font color=&quot;#008000&quot;&gt;	/** The number of elements in the free list. */&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;int32 NumFreeIndices;&lt;/div&gt;" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="30QO3uDoA559WpyeDdh6-121">
-          <mxGeometry y="170" width="660" height="50" as="geometry" />
+          <mxGeometry y="170" width="500" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="30QO3uDoA559WpyeDdh6-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.101;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="30QO3uDoA559WpyeDdh6-123" target="VCTUgfqEn0ciAongpH22-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30QO3uDoA559WpyeDdh6-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="30QO3uDoA559WpyeDdh6-124" target="30QO3uDoA559WpyeDdh6-109">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
